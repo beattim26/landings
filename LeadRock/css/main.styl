@@ -1,0 +1,643 @@
+html
+    box-sizing: border-box
+    -ms-overflow-style: scrollbar
+    font-family: 'tt_commonslight', sans-serif
+    font-size: 0.09765625vw
+
+body
+    margin: 0
+    font-size: 16rem
+    color: #333333
+
+.container
+    margin-right: auto
+    margin-left: auto
+    overflow-x: hidden
+
+img
+    width: 100%
+    height: auto
+
+svg
+    width: 100%
+    height: auto
+    max-height: 99rem
+
+*,::after,::before
+    box-sizing: inherit
+
+.header
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: flex-end
+    padding: 74rem 87.15rem
+    min-height: 100vh
+    background: url('../img/header-back.jpg') no-repeat
+    background-size: cover
+    &-nav
+        display: flex
+        justify-content: flex-end
+        &__logo
+            width: 291.79rem
+            height: 57.78rem
+    &-title
+        position: relative
+        display: inline-block
+        margin: 0 51.58rem 0 0
+        max-width: 491.42rem
+        font-family: 'tt_commonsblack', sans-serif
+        font-size: 100rem
+        line-height: 115rem
+        letter-spacing: 0.2em
+        text-transform: uppercase
+        color: #fff
+        &:after
+            content: ''
+            position: absolute
+            top: 38rem
+            right: -65rem
+            width: 206rem
+            height: 126rem
+            background: url('../img/header-arrow-2.svg') no-repeat
+            background-size: contain
+    &-button
+        position: relative
+        bottom: 30rem
+        display: flex
+        justify-content: center
+        width: 100%
+        &__link
+            position: relative
+            z-index: 10
+            display: flex
+            justify-content: center
+            align-items: center
+            min-width: 231rem
+            min-height: 62.91rem
+            box-shadow: 0rem 0rem 4rem #4EFF01
+            border-radius: 40rem
+            font-size: 20rem
+            letter-spacing: 0.5em
+            background: #55FF00
+            font-family: 'tt_commonsblack', sans-serif
+            color: #1A1A1A
+            text-decoration: none
+            text-transform: uppercase
+            &:before
+                content: ''
+                position: absolute
+                z-index: -1
+                top: -190rem
+                left: -220rem
+                width: 210rem
+                height: 232rem
+                background: url('../img/header-arrow-1.svg') no-repeat
+                background-size: cover
+            &:after
+                content: ''
+                position: absolute
+                z-index: -1
+                top: 16rem
+                left: 213rem
+                width: 333.5rem
+                height: 150.96rem
+                background: url('../img/header-arrow-3.svg') no-repeat
+                background-size: cover
+            &-span
+                position: relative
+                left: 7rem
+                top: 3rem
+
+.main-geo
+    padding: 31rem 189rem
+    min-height: 1024px
+    background: url('../img/geo-back-1.jpg') no-repeat
+    background-size: cover
+    color: #fff
+    &-title
+        font-family: 'tt_commonsblack', sans-serif
+        font-size: 90rem
+        line-height: 103rem
+        letter-spacing: 0.05em
+        color: #fff
+        margin: 0
+        text-align: center
+        margin-bottom: 20rem
+    &-list
+        list-style: none
+        font-size: 20rem
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        padding: 0
+        margin: 0
+        & a
+            position: relative
+            text-decoration: none
+            z-index: 2
+            &:nth-child(1):before
+                content: ''
+                position: absolute
+                top: 60rem
+                left: -114rem
+                width: 103.03rem
+                height: 264rem
+                background: url('../img/geo-arrow-1.svg') no-repeat
+                background-size: cover
+                z-index: 3
+            &:nth-child(3):after
+                content: ''
+                position: absolute
+                bottom: 164rem
+                left: 200rem
+                width: 107.03rem
+                height: 221rem
+                background: url('../img/geo-arrow-2.svg') no-repeat
+                background-size: cover
+                z-index: 3
+            &:nth-child(6):after
+                content: ''
+                position: absolute
+                top: 95rem
+                left: 275rem
+                width: 20rem
+                height: 125rem
+                background: url('../img/geo-arrow-3.svg') no-repeat
+                background-size: cover
+                z-index: 3
+            &:nth-child(7):before
+                content: ''
+                position: absolute
+                top: 185rem
+                left: -105rem
+                width: 20rem
+                height: 125rem
+                background: url('../img/geo-arrow-3.svg') no-repeat
+                background-size: cover
+                z-index: 3
+            &:nth-child(9):before
+                content: ''
+                position: absolute
+                top: 50rem
+                left: 210rem
+                width: 83.03rem
+                height: 294rem
+                background: url('../img/geo-arrow-4.svg') no-repeat
+                background-size: cover
+                z-index: 3
+        &__item
+            position: relative
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            align-items: center
+            width: 199rem
+            height: 199rem 
+            background-color: #2C2245
+            opacity: 0.8;
+            box-shadow: 0rem 4rem 10rem rgba(0, 0, 0, 0.25);
+            border-radius: 20rem
+            margin-bottom: 33rem
+            padding: 30px 40px
+            &:hover
+                background: #8000FF
+            &:hover svg path
+                stroke: #fff
+            &-paragraph
+                font-size: 20rem
+                line-height: 23rem
+                letter-spacing: 0.3em
+                color:#EFDFFF
+                margin: 0
+                opacity: 1
+                text-align: center
+                &__span
+                    position: relative
+                    top: 23rem
+    &-button
+        display: flex
+        justify-content: center
+        width: 100%
+        &__link
+            position: relative
+            z-index: 10
+            display: flex
+            justify-content: center
+            align-items: center
+            min-width: 231rem
+            min-height: 62.91rem
+            box-shadow: 0rem 0rem 4rem #4EFF01
+            border-radius: 40rem
+            font-size: 20rem
+            letter-spacing: 0.5em
+            background: #55FF00
+            font-family: 'tt_commonsblack', sans-serif
+            color: #1A1A1A
+            text-decoration: none
+            text-transform: uppercase
+            &-span
+                position: relative
+                left: 7rem
+                top: 3rem
+
+.main-geo2
+    background: url('../img/geo-back-2.jpg') no-repeat
+    background-size: cover
+    &-list
+        & .main-geo-list__item
+            background-color: inherit
+            opacity: 1
+            padding: 25rem
+            &-title
+                margin: 0
+                font-family: 'tt_commonsblack', sans-serif
+                font-size: 80rem
+                line-height: 92rem
+                letter-spacing: 0.1rem
+                color: #54FF00
+        & a
+            &:nth-child(6):after
+                content: ""
+                position: absolute
+                width: 22rem
+                height: 474rem
+                background: url(../img/geo-arrow-5.svg) no-repeat
+                background-size: cover
+                z-index: 3
+            &:nth-child(7):before
+                content: ""
+                position: absolute
+                top: 185rem
+                left: -105rem
+                width: 22rem
+                height: 474rem
+                background: url(../img/geo-arrow-5.svg) no-repeat
+                background-size: cover
+                z-index: 3
+            &:nth-child(9):before
+                content: none
+            &:nth-child(18):before
+                content: ''
+                position: absolute
+                top: 70rem
+                left: 210rem
+                width: 83.03rem
+                height: 294rem
+                background: url('../img/geo-arrow-4.svg') no-repeat
+                background-size: cover
+                z-index: 3
+            &:nth-child(19):before
+                content: ''
+                position: absolute
+                top: 85rem
+                left: -90rem
+                width: 83.03rem
+                height: 294rem
+                background: url('../img/geo-arrow-4.svg') no-repeat
+                background-size: cover
+                z-index: 3
+                transform: rotate(180deg)
+    &-button
+        display: flex
+        justify-content: center
+        &__link
+            position: relative
+            bottom: 10rem
+            display: flex
+            justify-content: center
+            align-items: center
+            min-width: 231rem
+            min-height: 62.91rem
+            box-shadow: 0rem 0rem 4rem #4EFF01
+            border-radius: 40rem
+            font-size: 20rem
+            letter-spacing: 0.5em
+            background: #55FF00
+            font-family: 'tt_commonsblack', sans-serif
+            color: #1A1A1A
+            text-decoration: none
+            text-transform: uppercase
+
+.geo
+    background: url('../img/SK-back.jpg') no-repeat
+    background-size: cover
+    padding: 33rem 86rem
+    min-height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    & .geo-header
+        &-nav
+            display: flex
+            justify-content: space-between
+            align-items: center
+            &__title
+                margin: 0
+                font-size: 90rem
+                line-height: 103rem
+                letter-spacing: 0.05em
+                color: #fff
+                font-family: 'tt_commonsblack', sans-serif
+            &__logo
+                width: 186rem
+                height: 37rem
+    &-main
+        &-list
+            list-style: none
+            padding: 0
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+            margin-top: 40rem
+            & a
+                position: relative
+                text-decoration: none
+                z-index: 1
+                &:nth-child(1):before
+                    content: ''
+                    position: absolute
+                    top: -20rem
+                    left: 21rem
+                    width: 306rem
+                    height: 96rem
+                    background: url('../img/geo-list-1.svg') no-repeat
+                    background-size: cover
+                    z-index: 10
+                &:nth-child(2):before,
+                &:nth-child(4):before,
+                &:nth-child(5):before,
+                &:nth-child(6):before,
+                &:nth-child(8):before
+                    content: ''
+                    position: absolute
+                    top: -14rem
+                    left: 26rem
+                    width: 168rem
+                    height: 168rem
+                    background: url('../img/geo-list-2.svg') no-repeat
+                    background-size: cover
+                    z-index: 10
+                &:nth-child(3):before
+                    content: ''
+                    position: absolute
+                    top: -20rem
+                    left: -106rem
+                    width: 306rem
+                    height: 96rem
+                    background: url('../img/geo-list-1.svg') no-repeat
+                    background-size: cover
+                    z-index: 10
+                    transform: scale(-1, 1)
+                &:nth-child(7):before
+                    content: ''
+                    position: absolute
+                    top: 64rem
+                    left: 21rem
+                    width: 306rem
+                    height: 96rem
+                    background: url('../img/geo-list-1.svg') no-repeat
+                    background-size: cover
+                    z-index: 10
+                    transform: scale(1, -1)
+                &:nth-child(9):before
+                    content: ''
+                    position: absolute
+                    top: 64rem
+                    left: -106rem
+                    width: 306rem
+                    height: 96rem
+                    background: url('../img/geo-list-1.svg') no-repeat
+                    background-size: cover
+                    z-index: 10
+                    transform: scale(-1, -1)
+                &:nth-child(4):after
+                    content: ''
+                    position: absolute
+                    top: 60rem
+                    left: 220rem
+                    width: 95rem
+                    height: 15rem
+                    background: url('../img/geo-list-3.svg') no-repeat
+                    background-size: cover
+                    z-index: 10
+                &:nth-child(6):after
+                    content: ''
+                    position: absolute
+                    top: 60rem
+                    left: -100rem
+                    width: 95rem
+                    height: 15rem
+                    background: url('../img/geo-list-3.svg') no-repeat
+                    background-size: cover
+                    z-index: 10
+                    transform: scale(-1, 1)
+            & .item-circle:before
+                    content: ''
+                    position: absolute
+                    top: -14rem !important
+                    left: 26rem !important
+                    width: 168rem !important
+                    height: 168rem !important
+                    background: url('../img/geo-list-2.svg') no-repeat !important
+                    background-size: cover !important
+                    z-index: 10 !important
+            & .item-circle:after
+                content: none !important
+            &__item
+                width: 221rem
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: space-around
+                margin-bottom: 30rem
+                &-img
+                    width: 140rem
+                    height: 140rem
+                    margin: 0
+                    & img
+                        border-radius: 50%
+                &-title
+                    font-family: 'tt_commonsblack', sans-serif
+                    font-size: 25rem
+                    line-height: 29rem
+                    letter-spacing: 0.05em
+                    color: #55FF00
+                    margin: 30rem 0 0 0
+                    text-align: center
+                &-paragraph
+                    font-size: 15rem
+                    line-height: 17rem
+                    text-align: center
+                    letter-spacing: 0.1em
+                    color: #fff
+        &-button
+            display: flex
+            justify-content: center
+            &__link
+                display: flex
+                justify-content: center
+                align-items: center
+                min-width: 231rem
+                min-height: 62.91rem
+                box-shadow: 0rem 0rem 4rem #4EFF01
+                border-radius: 40rem
+                font-size: 20rem
+                letter-spacing: 0.5em
+                background: #55FF00
+                font-family: 'tt_commonsblack', sans-serif
+                color: #1A1A1A
+                text-decoration: none
+                text-transform: uppercase
+    &-ro
+        background: url('../img/SK-back.jpg') no-repeat
+        background-size: cover
+    &-ro
+        background: url('../img/PL-back.jpg') no-repeat
+        background-size: cover
+    &-cz
+        background: url('../img/CZ-back.jpg') no-repeat
+        background-size: cover
+    &-ae
+        background: url('../img/AE-back.jpg') no-repeat
+        background-size: cover
+    &-my
+        background: url('../img/MY-back.jpg') no-repeat
+        background-size: cover
+    &-bg
+        background: url('../img/BG-back.jpg') no-repeat
+        background-size: cover
+    &-vn
+        background: url('../img/VN-back.jpg') no-repeat
+        background-size: cover
+    &-gr
+        background: url('../img/GR-back.jpg') no-repeat
+        background-size: cover
+    &-id
+        background: url('../img/ID-back.jpg') no-repeat
+        background-size: cover
+    &-es
+        background: url('../img/ES-back.jpg') no-repeat
+        background-size: cover
+    &-it
+        background: url('../img/IT-back.jpg') no-repeat
+        background-size: cover
+
+.overlay
+    display: none
+    width: 100%
+    height: 100%
+    position: fixed
+    top: 0
+    z-index: 990
+    background-color: #000000
+    opacity: 0.6
+
+.popup
+    display: none
+    position: fixed
+    top: 22%;
+    left: calc(50% - 125rem)
+    z-index 999
+    background: #7603E8
+    mix-blend-mode: normal
+    box-shadow: 0rem 0rem 10rem rgba(0, 0, 0, 0.25)
+    border-radius: 15rem
+    width: 300rem
+    height: 450rem
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    padding: 27rem 16rem
+    opacity: 1 
+    & .close-button
+        position: absolute
+        right: 16rem
+        top: 16rem
+        width: 10rem
+        height: 10rem
+        background: url('../img/close-btn.svg') no-repeat
+        background-size: cover
+    &-main
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        width: 255rem
+        &__image
+            width: 162rem
+            height: 162rem
+            & img
+                border-radius: 50%
+        &__title
+            margin: 20rem 0 0 0
+            font-size: 30rem
+            line-height: 34rem
+            letter-spacing: 0.05em
+            color: #55FF00
+            font-family: 'tt_commonsblack', sans-serif
+            text-align: center
+        &__paragraph
+            font-size: 15rem
+            line-height: 17rem
+            text-align: center
+            letter-spacing: 0.1em
+            color: #FFFFFF
+            margin-top: 5rem
+    &-statistic
+        display: flex
+        flex-direction: column
+        width: 100%
+        margin-bottom: 15rem
+        hr
+            width: 100%
+            height: 2rem
+            background-color: #4EFF01
+        &__first
+            display: flex
+            justify-content: space-between
+            &-paragraph
+                font-size: 14.5805rem
+                line-height: 17rem
+                text-align: center
+                letter-spacing: 0.1em
+                color: #FFFFFF
+                margin: 0
+                width: 54.89rem
+                &:nth-child(1)
+                    text-align: left
+                &:nth-child(3)
+                    text-align: right
+        &__second
+            display: flex
+            justify-content: space-between
+            &-paragraph
+                font-family: 'tt_commonsblack', sans-serif
+                font-size: 14.5805rem
+                line-height: 17rem
+                text-align: center
+                letter-spacing: 0.1em
+                color: #FFFFFF
+                margin: 0
+                width: 54.89rem
+                &:nth-child(1)
+                    text-align: left
+                &:nth-child(3)
+                    text-align: right
+    &-button
+        display: flex
+        justify-content: center
+        &__link
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 186rem
+            height: 35rem
+            background: #4EFF01
+            border-radius: 50px
+            font-size: 15rem
+            line-height: 17rem
+            letter-spacing: 0.1em
+            color: #000
+            text-decoration: none
+            box-shadow: 0rem 0rem 10rem #4EFF01

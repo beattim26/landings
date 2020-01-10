@@ -1,0 +1,741 @@
+html
+    box-sizing: border-box
+    -ms-overflow-style: scrollbar
+    font-family: 'tt_commonsregular', sans-serif
+    font-size: 21vw
+    color: #36323D
+
+@media (min-width: 481px)
+    html
+        font-size: 100px
+
+body
+    margin: 0
+    font-size: .16rem
+    color: #122947
+    height: 100%
+
+.container
+    padding: 0 
+    max-width: 480px
+    margin-right: auto
+    margin-left: auto
+    overflow-x: hidden
+
+img
+    width: 100%
+    height: auto
+
+*,::after,::before
+    box-sizing: inherit
+
+.header
+    &-contact
+        position: fixed
+        z-index: 9999
+        top: 0
+        width: 4.8rem
+        padding: .14rem .30rem
+        background: #36323D
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &__phone
+            display: flex
+            color: #fff
+            &-link
+                color: #fff
+                font-size: .21rem
+                line-height: .24rem
+                margin-right: .10rem
+                font-family: 'tt_commons_boldbold', sans-serif
+                &:visited
+                    color: #fff
+            &-paragraph
+                margin: 0
+                font-size: .23rem
+                line-height: .21rem
+                padding-top: .02rem
+                color: #fff
+        &__images
+            display: flex
+            justify-content: space-between
+            align-items: center
+            min-width: 1.1rem
+            & img
+                width: .27rem
+                height: .27rem
+    &-title
+        padding: .12rem .2rem
+        margin-top: .59rem
+        &__text
+            font-family: 'tt_commons_boldbold', sans-serif
+            margin: 0
+            font-size: .21rem
+            line-height: .24rem
+            text-align: center
+            padding-top: .05rem
+            &-span
+                color: #724CF9
+
+.jumbotron
+    padding-bottom: .35rem
+    &-main
+        position: relative
+        min-height: 4.57rem
+        background: url('../img/header-bg.jpg') no-repeat
+        background-size: cover
+        &__list
+            position: absolute
+            top: 1.1rem
+            right: .3rem
+            padding: 0
+            margin: 0
+            list-style: none
+            &-item
+                position: relative
+                font-size: .23rem
+                line-height: .26rem
+                color: #333333
+                margin-bottom: .18rem
+                max-width: 2.3rem
+                padding-left: .5rem
+                &:before
+                    content: ''
+                    position: absolute
+                    top: .06rem
+                    left: .02rem
+                    width: .38rem
+                    height: .33rem
+                    background: url('../img/check-icon.png') no-repeat
+                    background-size: cover
+    &-price
+        padding: .1rem .2rem
+        position: relative
+        bottom: .60rem
+        display: flex
+        justify-content: space-around
+        margin: auto
+        max-width: 4.34rem
+        min-height: .95rem
+        background: #fff
+        box-shadow: 0.06rem .01rem .12rem rgba(80, 124, 98, 0.14);
+        border-radius: .14rem
+        &__old
+            display: flex
+            flex-direction: column
+            justify-content: center
+            &-title
+                font-weight: 400
+                font-size: .23rem
+                margin: 0
+                color: #333333
+                padding-top: .04rem
+            &-price
+                font-family: 'tt_commons_boldbold', sans-serif
+                margin: 0
+                font-size: .4rem
+                text-decoration-line: line-through
+                color: #BCBCBC
+                padding-top: .05rem
+        &__new
+            display: flex
+            flex-direction: column
+            justify-content: center
+            &-title
+                font-weight: 400
+                font-size: .23rem
+                margin: 0
+                color: #333333
+                padding-top: .019rem
+                &__span
+                    color: #f66
+                    font-family: 'tt_commons_boldbold', sans-serif
+            &-price
+                font-family: 'tt_commons_boldbold', sans-serif
+                margin: 0
+                font-size: .4rem
+                color: #724CF9
+                text-align: center
+                padding-top: .03rem
+    &-second
+        margin-top: -.6rem
+        padding: 0 .25rem
+        &__title
+            font-family: 'tt_commons_boldbold', sans-serif
+            font-size: .3rem
+            line-height: .34rem
+            text-transform: uppercase
+            max-width: 3.97rem
+            margin-bottom: .10rem
+            &-span
+                color: #724CF9
+        &__paragraph
+            font-size: .23rem
+            line-height: .26rem
+            margin-top: .10rem
+        &__button
+            display: flex
+            justify-content: center
+            margin-bottom: .3rem
+            &-link
+                font-family: 'tt_commons_boldbold', sans-serif
+                border-radius: .405rem
+                color: #fff
+                text-decoration: none
+                background-color: #724CF9
+                background-image: url('../img/button1.png')
+                background-repeat: no-repeat
+                background-size: cover
+                width: 3.6rem
+                min-height: .82rem
+                display: flex
+                justify-content: center
+                align-items: center
+                font-size: .30rem
+                line-height: .34rem
+                padding-top: .10rem
+        &__small
+            font-family: 'tt_commonslight', sans-serif
+            font-size: .18rem
+            line-height: .21rem
+
+.about1
+    background: #FAFAFA
+    padding: .35rem .25rem .2rem .25rem
+    &-title
+        max-width: 4.3rem
+        font-family: 'tt_commons_boldbold', sans-serif
+        margin: 0
+        font-size: .26rem
+        line-height: .3rem
+        color: #333333
+        &__span
+            color: #724CF9
+    &-list
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+        list-style: none
+        padding: 0
+        margin-top: .45rem
+        margin-bottom: 0
+        &__item
+            width: 1.66rem
+            margin-bottom: .2rem
+            display: flex
+            flex-direction: column
+            align-items: center
+            & picture source,
+            & picture img
+                width: 1.51rem
+                height: 1.44rem
+            &-title
+                margin: 0
+                margin-top: .15rem
+                text-align: center
+                font-size: .23rem
+                line-height: .26rem
+                font-weight: 400
+                &__span
+                    font-family: 'tt_commons_boldbold', sans-serif
+
+.about2
+    padding: .35rem .25rem .15rem .25rem
+    &-title
+        margin: 0
+        margin-bottom: .25rem
+        &__span
+            display: block
+            font-size: .3rem
+            line-height: .34rem
+            color: #724CF9
+            font-family: 'tt_commons_boldbold', sans-serif
+            margin-bottom: .2rem
+    &-block
+        &__img1
+            display: block
+            width: 2.59rem
+            height: 2.86rem
+            margin: auto
+        &__img2
+            display: block
+            width: 3.37rem
+            height: 2.44rem
+            margin: auto
+        &__paragraph
+            position: relative
+            bottom: .2rem
+            font-size: .23rem
+            line-height: .26rem
+            color: #333333
+            margin: 0
+            padding: .20rem
+            box-shadow: 0rem .04rem .12rem rgba(188, 188, 188, 0.25);
+            border-radius: .10rem
+            background-color: #fff
+
+.about3
+    padding: .35rem .25rem .15rem
+    background: #FAFAFA
+    &-title
+        margin: 0
+        font-size: .3rem
+        line-height: .34rem
+        font-family: 'tt_commons_boldbold', sans-serif
+    &-list
+        padding: 0
+        list-style: none
+        margin-top: .30rem
+        margin-bottom: .34rem
+        &__item
+            position: relative
+            margin-bottom: .15rem
+            padding-left: .45rem
+            font-size .23rem
+            line-height: .26rem
+            max-width: 3.74rem
+            &:before
+                content: ''
+                position: absolute
+                top: -.03rem
+                left: .02rem
+                width: .27rem
+                height: .269rem
+                background: url('../img/check.png') no-repeat
+                background-size: contain
+            &:nth-child(2):before,
+            &:nth-child(4):before
+                top: .08rem
+    &-slider
+        margin-bottom: .4rem
+        &__item
+            margin-bottom: .2rem
+            & picture source,
+            & picture img
+                width: 4.3rem
+                height: 2.54rem
+
+.howworks
+    padding: .35rem 0 .20rem
+    &-title
+        margin: 0
+        margin-bottom: .3rem
+        padding: 0 .25rem
+        font-size: .3rem
+        line-height: .34rem
+        font-family: 'tt_commons_boldbold', sans-serif
+        &__span
+            color: #724CF9
+    &-science
+        padding: .25rem
+        background: #FAFAFA
+        &__title
+            position: relative
+            margin: 0
+            font-size: .26rem
+            line-height: .3rem
+            font-family: 'tt_commons_boldbold', sans-serif
+            padding-left: .7rem
+            &:before
+                content: ''
+                position: absolute
+                top: .18rem
+                left: 0rem
+                width: .47rem
+                height: .47rem
+                background: url('../img/science.svg') no-repeat
+                background-size: contain
+        &__paragraph
+            margin-bottom: 0
+            margin-top: .05rem
+            font-size: .23rem
+            line-height: .26rem
+            padding-left: .7rem
+    &-list
+        padding: 0 .25rem
+        list-style: none
+        &__item
+            display: flex
+            align-items: center
+            margin-bottom: .29rem
+            &:last-child
+                margin-bottom: 0
+            &-img
+                min-width: 1.42rem
+                min-height: 1.42rem
+            &-paragraph
+                font-size: .23rem
+                line-height: .26rem
+                padding-left: .1rem
+                margin: 0
+
+.about4
+    background: #FAFAFA
+    padding: .35rem .25rem
+    &-title
+        margin: 0
+        font-size: .3rem
+        line-height: .34rem
+        font-family: 'tt_commons_boldbold', sans-serif
+        &__span
+            color: #724CF9
+    &-paragraph
+        font-size: .23rem
+        line-height: .26rem
+        margin-top: .1rem
+    &-list
+        padding: 0
+        list-style: none
+        margin-bottom: .3rem
+        &__item
+            position: relative
+            padding-left: .3rem
+            font-size: .23rem
+            line-height: .26rem
+            margin-bottom: .1rem
+            &:before
+                content: ''
+                position: absolute
+                top: .03rem
+                left: .02rem
+                width: .18rem
+                height: .18rem
+                background: url('../img/check.png') no-repeat
+                background-size: contain
+    &-button
+        display: flex
+        justify-content: center
+        &__link
+            font-family: 'tt_commons_boldbold', sans-serif
+            border-radius: .405rem
+            color: #36323D
+            text-decoration: none
+            background-color: #ffe27b
+            background-image: url('../img/button2.png')
+            background-repeat: no-repeat
+            background-size: cover
+            width: 3.6rem
+            min-height: .82rem
+            display: flex
+            justify-content: center
+            align-items: center
+            font-size: .30rem
+            line-height: .34rem
+            padding-top: .10rem
+            text-transform: uppercase
+
+.video
+    padding: .35rem .25rem .30rem
+    &-title
+        margin: 0
+        margin-bottom: .3rem
+        font-size: .3rem
+        line-height: .34rem
+        font-family: 'tt_commons_boldbold', sans-serif
+        &__span
+            color: #724CF9
+    &-frame
+        width: 4.3rem
+        height: 3.03rem
+
+.about5
+    position: relative
+    min-height: 3.01rem
+    background: url('../img/about5-bg.jpg') no-repeat
+    background-size: cover
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    &-title
+        margin: 0
+        margin-bottom: .3rem
+        font-size: .3rem
+        line-height: .34rem
+        font-family: 'tt_commons_boldbold', sans-serif
+        max-width: 2.42rem
+        text-align: center
+    &-button
+        &__link
+            position: relative
+            background: #FFFFFF;
+            box-shadow: 0rem .04rem .12rem rgba(188, 188, 188, 0.25);
+            border-radius: .29rem
+            min-width: 3.31rem
+            padding: .18rem .30rem .15rem
+            color: #724CF9
+            text-decoration: none
+            &:after
+                content: ''
+                position: absolute
+                top: .22rem
+                right: .14rem
+                width: .11rem
+                height: .07rem
+                background: url('../img/arrow.svg') no-repeat
+                background-size: contain
+
+.author
+    padding: .35rem .25rem .25rem
+    &-title
+        margin: 0
+        margin-bottom: .3rem
+        font-size: .3rem
+        line-height: .34rem
+        font-family: 'tt_commons_boldbold', sans-serif
+        &__span
+            color: #724CF9
+    &-img
+        display: block
+        width: 1.84rem
+        height: 1.84rem
+        margin: auto
+        margin-bottom: .2rem
+    &-paragraph
+        font-size: .23rem
+        line-height: .26rem
+        margin: .1rem 0
+        &-2
+            margin-bottom: .25rem
+
+.certificate
+    padding: .35rem 0 .25rem
+    background: #FCFCFC
+    position: relative
+    &-title
+        margin: 0
+        margin-bottom: .3rem
+        padding: 0 .25rem
+        font-size: .3rem
+        line-height: .34rem
+        font-family: 'tt_commons_boldbold', sans-serif
+        &__span
+            color: #724CF9
+    &-images
+        display: flex
+        justify-content: space-between
+        & picture
+            &:first-child
+                & source,
+                & img
+                    width: 1.2rem
+                    height: 2.7461rem
+            &:nth-child(2)
+                & source,
+                & img
+                    width: 1.93rem
+                    height: 2.7461rem
+            &:last-child
+                & source,
+                & img
+                    width: 1.2rem
+                    height: 2.7461rem
+
+.reviews
+    padding: .35rem .25rem .25rem
+    &-title
+        margin: 0
+        margin-bottom: .3rem
+        font-size: .3rem
+        line-height: .34rem
+        font-family: 'tt_commons_boldbold', sans-serif
+        &__span
+            color: #724CF9
+    &-images
+        &__item
+            margin-bottom: .35rem
+            width: 4.3rem
+            height: 7.06rem
+            box-shadow: 0rem .04rem .12rem rgba(106, 106, 106, 0.25)
+            & picture source,
+            & picture img
+                width: 100%
+                height: 100%
+
+.consultation
+    background: #F8F8F8
+    padding: .35rem .25rem .45rem
+    &-title
+        margin: 0
+        margin-bottom: .3rem
+        font-size: .3rem
+        line-height: .34rem
+        font-family: 'tt_commons_boldbold', sans-serif
+        &__span
+            color: #724CF9
+    &-list
+        padding: 0
+        list-style: none
+        &__item
+            display: flex
+            align-items: center
+            margin-bottom: .29rem
+            &:last-child
+                margin-bottom: 0
+            &-img
+                min-width: 1.43rem
+                min-height: 1.43rem
+                max-width: 1.43rem
+                max-height: 1.43rem
+            &-text
+                padding-left: .2rem
+                &__title
+                    margin: 0
+                    margin-bottom: .15rem
+                    font-size: .23rem
+                    line-height: .30rem
+                    font-family: 'tt_commons_boldbold', sans-serif
+                &__paragraph
+                    font-size: .23rem
+                    line-height: .26rem
+                    margin: 0
+.contacts
+    padding: 0 .25rem .45rem
+    margin-top: -.3rem
+    &-form
+        background: #724CF9;
+        box-shadow: .06rem .10rem .12rem rgba(80, 124, 98, 0.14);
+        border-radius: .14rem  
+        padding: .7rem .35rem
+        display: flex
+        flex-direction: column
+        margin-bottom: .4rem
+        &__title
+            margin: 0
+            margin-bottom: .2rem
+            font-size: .30rem
+            line-height: .34rem
+            color: #fff
+            text-transform: uppercase
+            text-align: center
+        &__input
+            background: #FBFBFB;
+            border: .0114208rem solid #DBDBDB;
+            box-sizing: border-box;
+            border-radius: .10rem
+            padding: .23rem .33rem
+            margin-bottom: .24rem
+            font-size: .21rem
+            line-height: .29rem
+            color: #36323D
+            letter-spacing: 0.01em
+            width: 100%
+        &__button
+            font-family: 'tt_commons_boldbold', sans-serif
+            border-radius: .405rem
+            color: #36323D
+            text-decoration: none
+            background-color: #ffe27b
+            background-image: url('../img/button2.png')
+            background-repeat: no-repeat
+            background-size: cover
+            width: 3.6rem
+            min-height: .82rem
+            display: flex
+            justify-content: center
+            align-items: center
+            font-size: .23rem
+            line-height: .26rem
+            padding-top: .10rem
+            text-transform: uppercase
+            border: none
+            cursor: pointer
+    &-title
+        margin: 0
+        margin-bottom: .2rem
+        font-size: .3rem
+        line-height: .34rem
+        font-family: 'tt_commons_boldbold', sans-serif
+        &__span
+            color: #724CF9
+    &-paragraph
+        font-size: .23rem
+        line-height: .26rem
+        margin: .10rem 0
+    &-map
+        width: 100%
+        height: 3.45rem
+        margin-bottom: .5rem
+    & .jumbotron-second__button
+        margin: 0
+    & .jumbotron-second__button-link
+        width: 100%
+        padding-top: .05rem
+        text-transform: uppercase
+        font-size: .23rem
+        line-height: .26rem
+        
+.footer
+    padding: .35rem .25rem
+    background: #333333
+    min-height: 2.33rem
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    &-text
+        color: #fff
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        min-height: .96rem
+        &__paragraph
+            margin: 0
+            font-size: .21rem
+            line-height: .24rem
+            & a,
+            & a:active
+                color: #fff
+                font-size: .24rem
+    &-small
+        color: #fff
+        font-size: .16rem
+        line-height: .18rem
+
+.template1
+    display: none
+    padding: .45rem .25rem .15rem
+    background-color: #fff
+    &-block
+        border-bottom: .02rem solid #DDDDDD
+        margin-bottom: .25rem
+        &-last
+            border-bottom: 0
+        &__title
+            margin: 0
+            color: #724CF9
+            font-size: .26rem
+            line-height: .30rem
+            text-transform: uppercase
+            font-family: 'tt_commons_boldbold', sans-serif
+        &__text
+            &-paragraph
+                font-size: .23rem
+                line-height: .26rem
+                color: #656565
+
+.template2
+    display: none
+    position: absolute
+    z-index: 999
+    top: 0
+    padding: .88rem .75rem .43rem
+    background: inherit
+    width: 4.8rem
+    min-height: 5.92rem
+    &-close
+        position: absolute
+        top: .55rem
+        right: .45rem
+        background: url('../img/close.svg') no-repeat
+        background-size: cover
+        width: .2rem
+        height: .2rem
+    &-overlay
+        position: fixed
+        top: 0
+        left: 0
+        width: 100vw
+        height: 100vh
+        background: hsla(0,0%,100%,.55)
+        backdrop-filter: blur(4px)

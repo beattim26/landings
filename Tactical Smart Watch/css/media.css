@@ -1,0 +1,107 @@
+@media (min-width: 480px) {
+    .header-title__text {
+        max-width: 100%;
+    }
+    .header-title__link {
+        display: inline;
+    }
+}
+
+@media (min-width: 768px) {
+    .header-menu {
+        position: static;
+        width: auto;
+        margin: 0px;
+        background: inherit;
+        padding: 0;
+        margin-left: auto;
+    }
+    .header-menu__link {
+        margin-right: .4rem;
+    }
+    .description {
+        background-image: url('../img/description.jpg');
+        padding-bottom: .4rem;
+    }
+    .jumbotron-prod {
+        left: 20%;
+    }
+    .description-list__item:first-child:before, .description-list__item:nth-child(2):before {
+        top: -.15rem;
+    }
+    .jumbotron-prod {
+        width: 2.81rem;
+        height: 2.82rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .reviews {
+        margin-bottom: .6rem;
+    }
+    .jumbotron-back {
+        min-height: 7.68rem;
+        background-image: url('../img/jumbotron-back2.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .jumbotron {
+        position: absolute;
+        width: 100%;
+    }
+    .about {
+        margin-top: .8rem;
+        margin-bottom: 0;
+        min-height: 7.68rem;
+    }
+    .about-content {
+        padding: .2rem;
+        background-color: rgb(246, 246, 246, 0.5);
+    }
+    .advantages-image {
+        display: block;
+        margin: auto;
+        width: 4.39rem;
+        height: 4.41rem;
+    }
+    .form {
+        background-image: url('../img/form2.png');
+        background-size: cover;
+        min-height: 6rem;
+    }
+    .description-title1 {
+        max-width: 6.11rem;
+    }
+    .question-button {
+        max-width: 3.23rem;
+        margin: auto;
+    }
+    .slider-container {
+        box-shadow: none;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .slider-item {
+        box-shadow: 0 0 0.1rem rgba(0,0,0,.15);
+        border-radius: .2rem;
+    }
+    .proposal {
+        background-image: url('../img/proposal.png');
+    }
+    .description-list__item:first-child:before, .description-list__item:nth-child(1):before {
+        top: .1rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .jumbotron-prod {
+        top: 3.46rem;
+        left: 35%;
+    }
+}
+
+@media (min-width: 1920px) {
+   .jumbotron-prod {
+       top: 4rem;
+   }
+}

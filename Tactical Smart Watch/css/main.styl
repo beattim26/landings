@@ -1,0 +1,614 @@
+html
+    box-sizing: border-box
+    -ms-overflow-style: scrollbar
+    font-family: 'Montserrat', sans-serif
+    font-size: 21vw
+    overflow-x: hidden
+
+@media (min-width: 481px) {
+  html {
+    font-size: 100px;
+    overflow-x: hidden;
+  }
+}
+
+body
+    margin: 0
+    color: #141414
+    max-width: 480px
+    margin: auto
+    font-size: 16px
+    overflow-x: hidden
+
+img
+    width: 100%
+    height: auto
+
+*,::after,::before
+    box-sizing: inherit
+
+// header and header-menu
+
+
+.header
+    min-height: 14.75rem
+    background: url('../img/header-back.jpg') no-repeat
+    background-size: cover
+    &-title
+        margin: 0
+        font-style: normal
+        font-weight: 600
+        font-size: .28rem
+        line-height: .34rem
+        text-align: center
+        text-transform: uppercase
+        color: #313131
+        padding: .1rem
+        &-second
+            font-style: normal
+            font-weight: 600
+            font-size: .24rem
+            line-height: 114.9%
+            text-align: center
+            color: #FFFFFF
+            margin: 0
+            background: rgba(21, 22, 10, 0.5)
+            padding: .1rem
+    &-price
+        position relative
+        left: .83rem
+        display: block
+        font-style: normal
+        font-weight: 600
+        font-size: .3rem
+        line-height: .37rem
+        text-transform: uppercase
+        color: #3E4023
+        margin: .15rem 0
+        width: 1.52rem
+        text-align: center
+        &__span
+            display: block
+            font-size: .4rem
+    &-product
+        display: flex
+        align-items: flex-end
+        padding: 0 .2rem
+        margin-bottom: .7rem
+        &__img
+            width: 2.8rem
+            height: 3.99rem
+    &-button
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 3.7rem
+        height: .79rem
+        background: linear-gradient(160.8deg, #FFA800 28.63%, #E05E00 86.45%);
+        border: .05rem solid #FF9E0D
+        border-radius: .38rem
+        font-style: normal
+        font-weight: bold
+        font-size: .24rem
+        line-height: .29rem
+        text-transform: uppercase
+        color: #FFFFFF
+        text-decoration: none
+        margin: auto
+        margin-bottom: .6rem
+    &-list
+        font-style: normal
+        font-weight: normal
+        font-size: .25rem
+        line-height: 187.4%
+        text-transform: uppercase
+        color: #FFFFFF
+        padding-left: .75rem
+        padding-right: .15rem
+        list-style: none
+        margin-bottom: 1.7rem
+        &__item
+            position: relative
+            &:after
+                content: ''
+                position: absolute
+                top: .05rem
+                left: -.45rem
+                width: .33rem
+                height: .33rem
+                background: url('../img/check.svg') no-repeat
+                background-size: cover
+
+.product
+    &-prices
+        font-style: normal
+        font-weight: 500
+        font-size: .21rem
+        line-height: .26rem
+        text-transform: lowercase
+        color: #FFFFFF
+        position: relative
+        top: .40rem
+
+.prices
+    &-new
+        position relative
+        right: .1rem
+        display: flex
+        justify-content: center
+        align-items: center
+        background: url('../img/price.svg') no-repeat
+        width: 1.99rem
+        height: 1.32rem
+        background-size: contain
+        &__paragraph
+            font-size: .21rem
+            margin: 0
+        &__span
+            display: block
+            font-weight: bold
+            font-size: .58rem
+            line-height: .73rem
+            text-transform: uppercase
+            position: relative
+            bottom: .05rem
+    &-old
+        position relative
+        right: .15rem
+        display: flex
+        justify-content: center
+        align-items: center
+        font-weight: 500
+        font-size: .21rem
+        line-height: .26rem
+        text-transform: lowercase
+        color: #A4A4A4
+        &__paragraph
+            text-align: center
+            font-size: .21rem
+            margin: 0
+        &__span
+            display: block
+            font-weight: bold
+            font-style: normal
+            font-weight: bold
+            font-size: .43rem
+            line-height: .52rem
+            text-transform: uppercase
+            position: relative
+            bottom: .05rem
+            text-decoration: line-through
+
+.timer
+    &-title
+        font-weight: 600
+        font-size: .22rem
+        line-height: .27rem
+        text-align: center
+        color: #FFFFFF
+        margin: .1rem 0
+
+.jumbotron
+    &-title
+        padding: .2rem .13rem
+        background: url('../img/title-back.jpg') no-repeat
+        background-size: cover
+        font-weight: 500
+        font-size: .28rem
+        line-height: .34rem
+        text-align: center
+        text-transform: uppercase
+        color: #FFFFFF
+        margin: 0
+    &-main
+        background: url('../img/jumbotron-back.jpg') no-repeat
+        background-size: cover
+        min-height: 9.08rem
+        padding: .5rem .15rem .15rem .3rem
+    &-img
+        width: 2.95rem
+        height: 3.88rem
+        display: block
+        margin: auto
+    &-paragraph
+        font-style: normal
+        font-weight: normal
+        font-size: .24rem
+        line-height: .38rem
+        color: #181A19
+        position: relative
+        bottom: .5rem
+        margin-bottom: -.3rem
+
+.advantages
+    &-title
+        padding: .2rem .13rem
+        background: url('../img/title-back.jpg') no-repeat
+        background-size: cover
+        font-weight: 500
+        font-size: .25rem
+        line-height: .30rem
+        text-align: center
+        text-transform: uppercase
+        color: #FFFFFF
+        margin: 0
+    &-main
+        background: url('../img/advantages-back.jpg') no-repeat
+        background-size: cover
+        min-height: 12.09rem
+        padding: .5rem .15rem .15rem .3rem
+    &-list
+        font-style: normal
+        font-weight: normal
+        font-size: .22rem
+        line-height: 147.4%
+        color: #FFFFFF
+        padding-left: .55rem
+        padding-right: .15rem
+        list-style: none
+        margin-top: 6.1rem
+        &__item
+            position: relative
+            margin-bottom: .25rem
+            &:after
+                content: ''
+                position: absolute
+                top: .05rem
+                left: -.45rem
+                width: .33rem
+                height: .33rem
+                background: url('../img/check.svg') no-repeat
+                background-size: cover
+
+.characteristics
+    &-title
+        padding: .2rem .13rem
+        background: url('../img/title-back.jpg') no-repeat
+        background-size: cover
+        font-weight: 500
+        font-size: .25rem
+        line-height: .30rem
+        text-align: center
+        text-transform: uppercase
+        color: #FFFFFF
+        margin: 0
+    &-main
+        background: url('../img/characteristics-back.jpg') no-repeat
+        background-size: cover
+        min-height: 15.96rem
+        padding: .5rem 0
+    &-img
+        display: block
+        margin: auto
+        width: 4.42rem
+        height: 4.36rem
+    &-list
+        list-style: none
+        padding: 0
+        margin-top: -.2rem
+        &__item
+            display: flex
+            justify-content: space-between
+            padding: 0 .05rem
+            &:nth-child(odd)
+                background: rgba(45, 47, 47, 0.2)
+        &__paragraph
+            position: relative
+            font-style: normal
+            font-weight: 500
+            font-size: .2rem
+            line-height: .32rem
+            color: #181A19
+            width: 50%
+            padding-left: .4rem
+            &:before
+                content: ''
+                position: absolute
+                top: .07rem
+                left: .08rem
+                width: .23rem
+                height: .16rem
+                background: url('../img/check_2.svg') no-repeat
+                background-size: cover
+    &-button
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 3.7rem
+        height: .79rem
+        background: linear-gradient(160.8deg, #FFA800 28.63%, #E05E00 86.45%);
+        border: .05rem solid #FF9E0D
+        border-radius: .38rem
+        font-style: normal
+        font-weight: bold
+        font-size: .24rem
+        line-height: .29rem
+        text-transform: uppercase
+        color: #FFFFFF
+        text-decoration: none
+        margin: auto
+
+.technical
+    &-title
+        padding: .2rem .13rem
+        background: url('../img/title-back.jpg') no-repeat
+        background-size: cover
+        font-weight: 500
+        font-size: .25rem
+        line-height: .30rem
+        text-align: center
+        text-transform: uppercase
+        color: #FFFFFF
+        margin: 0
+     &-main
+        background: url('../img/technical-back.jpg') no-repeat
+        background-size: cover
+        min-height: 31.87rem
+        padding: .5rem 0
+    &-list
+        list-style: none
+        padding: 0
+        &__item
+            font-style: normal
+            font-weight: 400
+            font-size: .22rem
+            line-height: .35rem
+            color: #FFFFFF
+            transform: rotate(-12.9deg)
+            padding-left: .5rem
+            &:nth-child(1)
+                margin-top: 3.95rem
+            &:nth-child(2)
+                margin-top: 4.9rem
+            &:nth-child(3)
+                margin-top: 3.8rem
+            &:nth-child(4)
+                margin-top: 4.9rem
+            &:nth-child(5)
+                margin-top: 3.5rem
+            &:before
+                content: ''
+                position: absolute
+                top: .07rem
+                left: .25rem
+                width: .13rem
+                height: .22rem
+                background: url('../img/check_3.svg') no-repeat
+                background-size: cover
+                transform: rotate(9deg)
+    &-order
+        font-style: normal
+        font-weight: 600
+        font-size: .23rem
+        line-height: .37rem
+        color: #181A19
+        text-align: center
+        margin-top: 1.45rem
+
+.skills
+    &-title
+        padding: .2rem .13rem
+        background: url('../img/title-back.jpg') no-repeat
+        background-size: cover
+        font-weight: 500
+        font-size: .25rem
+        line-height: .30rem
+        text-align: center
+        text-transform: uppercase
+        color: #FFFFFF
+        margin: 0
+    &-main
+        background: url('../img/skills-back.jpg') no-repeat
+        background-size: cover
+        min-height: 8.18rem
+        padding: .5rem 0
+    &-list
+        list-style: none
+        padding-left: .98rem
+        margin: 0
+        &__item
+            position: relative
+            display: flex
+            align-items: center
+            padding: .15rem
+            background: rgba(45, 47, 47, 0.2)
+            margin-bottom: .38rem
+            font-weight: 600
+            font-size: .22rem
+            line-height: .35rem
+            color: #181A19
+            min-height: .88rem
+            &:first-child
+                &:before
+                    content: ''
+                    position: absolute
+                    top: .15rem
+                    left: -.75rem
+                    width: .59rem
+                    height: .59rem
+                    background: url('../img/skills_1.svg') no-repeat
+                    background-size: cover
+            &:nth-child(2)
+                &:before
+                    content: ''
+                    position: absolute
+                    top: .15rem
+                    left: -.75rem
+                    width: .57rem
+                    height: .64rem
+                    background: url('../img/skills_2.svg') no-repeat
+                    background-size: cover
+            &:nth-child(3)
+                &:before
+                    content: ''
+                    position: absolute
+                    top: .05rem
+                    left: -.75rem
+                    width: .64rem
+                    height: .78rem
+                    background: url('../img/skills_3.svg') no-repeat
+                    background-size: cover
+            &:nth-child(4)
+                &:before
+                    content: ''
+                    position: absolute
+                    top: .15rem;
+                    left: -.75rem;
+                    width: .52rem
+                    height: .55rem
+                    background: url('../img/skills_4.svg') no-repeat
+                    background-size: cover
+            &:nth-child(5)
+                &:before
+                    content: ''
+                    position: absolute
+                    top: .1rem;
+                    left: -.8rem;
+                    width: .7rem
+                    height: .63rem
+                    background: url('../img/skills_5.svg') no-repeat
+                    background-size: cover
+            &:nth-child(6)
+                &:before
+                    content: ''
+                    position: absolute
+                    top: .25rem;
+                    left: -.75rem;
+                    width: .58rem
+                    height: .47rem
+                    background: url('../img/skills_6.svg') no-repeat
+                    background-size: cover
+            &:last-child
+                margin-bottom: 0
+
+.reviews
+    &-title
+        padding: .2rem .13rem
+        background: url('../img/title-back.jpg') no-repeat
+        background-size: cover
+        font-weight: 500
+        font-size: .25rem
+        line-height: .30rem
+        text-align: center
+        text-transform: uppercase
+        color: #FFFFFF
+        margin: 0
+    &-main
+        background: url('../img/reviews-back.jpg') no-repeat
+        background-size: cover
+        min-height: 10.5rem
+        padding: .5rem 0 
+
+.swiper-container
+    background: #fff
+
+.swiper-pagination-bullet
+    width: .17rem
+    height: .17rem
+    margin: 0 .03rem
+    background: #2D2F2F !important
+    opacity: 1
+
+.swiper-pagination-bullet-active
+    background: #C3D300 !important
+
+.steps
+    &-title
+        padding: .2rem .13rem
+        background: url('../img/title-back.jpg') no-repeat
+        background-size: cover
+        font-weight: 500
+        font-size: .25rem
+        line-height: .30rem
+        text-align: center
+        text-transform: uppercase
+        color: #FFFFFF
+        margin: 0
+    &-main
+        background: url('../img/steps-back.jpg') no-repeat
+        background-size: cover
+        min-height: 12.32rem
+        padding: .5rem 0
+    &-list
+        list-style: none
+        padding: 0
+        padding-left: .45rem
+        padding-right: .25rem
+        font-style: normal
+        font-weight: normal
+        font-size: .22rem
+        line-height: .27rem
+        color: #FFFFFF
+        margin-top: 4.8rem
+        &__item
+            margin-bottom: .2rem
+        &__number
+            font-weight: 600
+            font-size: .36rem
+            line-height: .44rem
+
+.form
+    min-height: 14rem
+    background: url('../img/form-back.jpg') no-repeat
+    background-size: cover
+
+.main-form
+    display: flex
+    flex-direction: column
+    padding: 0 .3rem
+    margin-top: .3rem
+    &__label
+        display: flex
+        flex-direction: column
+        font-style: normal
+        font-weight: 500
+        font-size: .25rem
+        line-height: .30rem
+        text-transform: uppercase
+        font-feature-settings: 'tnum' on, 'lnum' on
+        color: #FFFFFF
+        margin-bottom: .3rem
+    &__input
+        background: #FFFFFF
+        border: 2px solid #969E31
+        box-sizing: border-box
+        box-shadow: inset 0px 4px 3px rgba(0, 0, 0, 0.14)
+        padding: .22rem .6rem
+        font-style: normal
+        font-weight: 500
+        font-size: .23rem
+        line-height: .28rem
+        font-feature-settings: 'tnum' on, 'lnum' on
+        color: #878787
+    &__button
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 3.7rem
+        height: .79rem
+        background: linear-gradient(160.8deg, #FFA800 28.63%, #E05E00 86.45%);
+        border: .05rem solid #FF9E0D
+        border-radius: .38rem
+        font-style: normal
+        font-weight: bold
+        font-size: .24rem
+        line-height: .29rem
+        text-transform: uppercase
+        color: #FFFFFF
+        text-decoration: none
+        margin: auto
+        margin-bottom: .6rem
+
+.footer
+    background-color: #1A1B1B
+    margin-top: -.02rem
+    padding: 0 0 .15rem 0
+    &-address
+        color: #fff
+        text-align: center
+        margin-top: 0
+    &-policy
+        color: #fff
+        display: block
+        width: 100%
+        text-align: center

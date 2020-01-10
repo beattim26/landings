@@ -1,0 +1,964 @@
+html
+    box-sizing: border-box
+    -ms-overflow-style: scrollbar
+    font-family: 'Work Sans', sans-serif
+    font-size: 21vw
+    color: #122947
+
+@media (min-width: 481px)
+    html
+        font-size: 100px
+
+body
+    margin: 0
+    font-size: .16rem
+    color: #122947
+    height: 100%
+
+.container
+    padding: 0 
+    max-width: 480px
+    margin-right: auto
+    margin-left: auto
+    overflow-x: hidden
+
+img
+    width: 100%
+    height: auto
+
+*,::after,::before
+    box-sizing: inherit
+
+.nav-item:first-child
+    position: relative
+    &:before
+        position: absolute
+        content: ''
+        width: 4.8rem
+        height: .02rem
+        left: -0.50rem
+        top: -0.16rem
+        background: #f1f1f1
+
+.nav-item:last-child 
+    margin-top: .15rem
+
+.header
+    position relative
+    &-discount
+        position: relative
+        z-index: 1
+        background: #EF525B
+        padding: .10rem 0
+        &__title
+            font-size: .18rem
+            line-height: .22rem
+            text-align: center
+            text-transform: uppercase
+            margin: 0
+            font-weight: 300
+            color: #fff
+    &-link
+        font-family: 'Work Sans', sans-serif
+        font-weight: 500
+        font-size: .23rem
+        color: #122947
+        &-discount
+            color: #EF525B
+            font-size: .26rem
+            font-size: 500
+    &-logo
+        display: flex
+        justify-content: center
+        align-items: center
+    & img
+        width: 1.17rem
+        height: .35rem
+    &-backet
+        position: relative
+        & img
+            width: .2164rem
+            height: .29rem
+    &-backet-item
+        &:before
+            content: '1'
+            font-size: .06rem
+            line-height: .07rem
+            position: absolute
+            bottom: .02rem
+            right: -.02rem
+            padding-top: .0135rem
+            padding-left: .01rem
+            width: .1rem
+            height: .1rem
+            background-color: #122947
+            border-radius: 50%
+            color: #fff
+            text-align: center
+
+.jumbotron
+    background-color: #e5bab0;
+    &-title
+        position: relative
+        padding: 0 .2rem
+        background: url('../img/jumbo-back.jpg') no-repeat
+        background-size: cover
+        min-height: 3.74rem
+        &-first
+            position: relative
+            top: 2.53rem
+            margin: 0
+            text-align: right 
+            font-weight: 900
+            font-size: .50rem
+            line-height: .59rem
+            text-transform: uppercase
+            color: #FFFFFF
+            &:before
+                position: absolute
+                content: ''
+                top: -.8947rem
+                right: 0
+                width: 1.7739rem
+                height: .8147rem
+                background: url('../img/jumbo-title.png') no-repeat
+                background-size: cover
+        &-second
+            position: relative
+            top: 2.53rem
+            margin: 0
+            text-align: right 
+            font-weight 500
+            font-size: .18rem
+            line-height: .21rem
+            color: #fff
+    &-content
+        background-color: #E5BAB0
+        margin: 0 .2rem .3rem .2rem
+        &-block
+            position: relative
+            bottom: .1rem
+            background-color: #fff
+            padding: .4rem .5rem
+            backdrop-filter: blur(4px)
+            border-radius: .05rem
+            transition: .5s
+        &-button
+            display: block
+            text-align: center
+            background: linear-gradient(264.56deg, #122947 -4.48%, #193861 94.65%)
+            box-shadow: 0rem .10rem .20rem rgba(40, 40, 40, 0.25)
+            border-radius: .375rem
+            color: #fff
+            font-size: .21rem
+            line-height: .26rem
+            letter-spacing: 0.01em
+            text-transform: uppercase
+            text-decoration: none
+            padding: .22rem .32rem
+            margin: auto
+            font-weight: 300
+        &-list
+            list-style: none
+            margin: 0
+            padding 0
+            &__item
+                position: relative
+                margin-bottom: .50rem
+                &:after
+                    position: absolute
+                    content: ''
+                    bottom: -.28rem
+                    left: .76rem
+                    width: 1.89rem
+                    height: .05rem
+                    background-color: rgba(201, 112, 96, 0.27)
+            &__item:last-child
+                margin-bottom: .3rem
+                &:after
+                    content: none
+    &-item
+        &__title
+            position: relative
+            margin: 0
+            margin-bottom: .1rem
+            font-weight: 800
+            font-size: .28rem
+            line-height: .33rem
+            color: #122947
+            max-width: 3.18rem
+            &:before
+                position: absolute
+                content: ''
+                top: .05rem
+                left: -.4rem
+                width: .3rem
+                height: .3rem
+                background: url('../img/check.svg') no-repeat
+                background-size: cover
+        &__paragraph
+            font-weight: 300
+            font-size: .21rem
+            line-height: .25rem
+            letter-spacing: 0.01em
+            color: #122947
+            margin: 0
+
+.popstar
+    background: url('../img/popstar-about.png') no-repeat
+    background-position: right bottom
+    background-color: #FAF8F7
+    background-size: 1.6rem 4.54rem
+    padding: .4rem .2rem
+    &-title
+        position: relative
+        margin: 0
+        margin-bottom: .47rem
+        font-size: .3rem
+        line-height: .36rem
+        text-transform: uppercase
+        &:after
+            position: absolute
+            content: ''
+            bottom: -.20rem
+            left: 0
+            width: 2.47rem
+            height: .07rem
+            background: #EAD4D0
+    &-paragraph
+        font-size: .23rem
+        line-height: .28rem
+        margin: .25rem 0
+    &-about
+        margin: 0
+        &-list
+            padding: 0
+            margin: .6rem 0 0 0
+            list-style: none
+            &__item
+                display: flex
+                align-items: center
+                margin-bottom: .34rem
+                &:last-child
+                    margin-bottom: 0
+                & img
+                    width: 1rem
+                    height: 1rem
+                    border-radius: 50%
+                &-title
+                    font-size: .21rem
+                    line-height: .26rem
+                    text-align: center
+                    text-transform: uppercase
+                    max-width: 2.07rem
+
+.characteristics
+    padding: .4rem .2rem .2rem
+    &-title
+        position: relative
+        margin: 0
+        font-size: .3rem
+        line-height: .37rem
+        &:after
+            position: absolute
+            content: ''
+            bottom: -.20rem
+            left: 0
+            width: 2.47rem
+            height: .07rem
+            background: #EAD4D0
+    &-list
+        list-style: none
+        padding: 0
+        margin-top: .5rem
+        &__item
+            display: flex
+            margin-bottom: .42rem
+            &:last-child
+                margin: 0
+            & img
+                min-width: 1.3rem
+                height: 1.3rem
+    &-text
+        padding-left: .24rem
+        &__title
+            margin: 0 0 .2rem 0
+            font-size: .26rem
+            line-height: .32rem
+        &__paragraph
+            font-size: .23rem
+            line-height: .28rem
+            margin: 0
+
+.advantages
+    background-color: #FAF8F7
+
+.discount
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding: .67rem .2rem 
+    background-color: #EF525B
+    &-title
+        margin: 0
+        color: #FFF
+        text-transform: uppercase
+        font-size: .26rem
+        line-height: .32rem
+        text-align: center
+    &-timer
+        list-style: none
+        padding: 0
+        display: flex
+        justify-content: center
+        color: #FFF
+        font-size: .3rem
+        line-height: .37rem
+        letter-spacing: .05em
+    &-button
+        background: #FFFFFF
+        box-shadow: 0rem .1rem .23rem rgba(40, 40, 40, 0.25)
+        border-radius: .375rem
+        font-size: .21rem
+        line-height: .26rem
+        letter-spacing: 0.01em
+        text-transform: uppercase
+        text-decoration: none
+        padding: .22rem .25rem
+        color: #122947
+
+.review
+    padding: .24rem 0
+    & h2
+        margin: 0 .2rem 
+    &-comments
+        margin-top: .6rem
+        padding: .2rem .2rem
+        box-shadow: 0rem .04rem .12rem rgba(150, 150, 150, 0.25)
+        &__block
+            &-author
+                display: flex
+                justify-content: space-between
+                align-items: center
+                max-height: .32rem
+                margin-bottom: .20rem
+                & img
+                    width: .04rem
+                    height: .18rem
+                    margin-right: .05rem
+                &__name
+                    display: flex
+                    align-items: center
+                    & img
+                        width: .32rem
+                        height: .32rem
+                        margin-right: .07rem
+            &-comment
+                &__icons
+                    display: flex
+                    margin-top: .16rem
+                    justify-content: space-between
+                    & img
+                        width: .20rem
+                        height: .20rem
+                        margin-right: .07rem
+                &__likes
+                    display: flex
+                    align-items: center
+                    & img
+                        width: .45rem
+                        height: .17rem
+                        margin-right: .07rem
+                    & p
+                        margin-top: .16rem
+                &__paragraph
+                    font-size: .16rem
+                    line-height: .20rem
+                    margin-top: 0
+                &__comment
+                    display: flex
+                    & img
+                        position: relative
+                        top: .02rem
+                        width: .14rem
+                        height: .1409rem
+                        margin: 0 .04rem
+                &__hashtags
+                    a
+                        font-size: .16rem
+                        line-height: .20rem
+                        text-decoration: none
+                        color: #3A5B78
+                &__date
+                    font-size: .13rem
+                    line-height: .16rem
+                    color: #C4C4C4
+
+.test
+    background: #FAF8F7 
+    padding: .4rem .45rem
+    &-title
+        color: #122947
+        font-size: .3rem
+        line-height: .37rem
+        text-transform: uppercase
+        margin: 0
+    &-list
+        list-style: none
+        padding: 0
+        display: flex
+        justify-content: space-between
+        margin-top: .3rem
+        margin-bottom: .24rem
+        &__item
+            display: flex
+            justify-content: center
+            align-items: center
+            width: .61rem
+            height: .61rem
+            background: #EAD4D0
+            border-radius: 50%
+            font-size: .24rem
+            line-height: .29rem
+            color: #fff
+    &-button
+        padding: .22rem 0
+        display: block
+        max-width: 3rem
+        margin: auto
+        text-align: center
+        color: #122947
+        text-decoration: none
+        font-size: .21rem
+        line-height: .26rem
+        text-transform: uppercase
+        background: #FFFFFF
+        box-shadow: 0rem .10rem .23rem rgba(40, 40, 40, 0.25)
+        border-radius: .375rem
+
+.attention
+    padding: .4rem .35rem
+    &-title
+        margin: 0
+        color: #EF525B
+        font-size: .26rem
+        line-height: .32rem
+        font-weight: 300
+    &-paragraph
+        font-size: .18rem
+        line-height: .22rem
+        &__span
+            text-decoration: underline
+    &-button
+        padding: .22rem 0
+        display: block
+        max-width: 3rem
+        margin: auto
+        margin-top: .35rem
+        text-align: center
+        color: #fff
+        text-decoration: none
+        font-size: .21rem
+        line-height: .26rem
+        text-transform: uppercase
+        background: linear-gradient(264.56deg, #122947 -4.48%, #193861 94.65%)
+        box-shadow: 0rem .10rem .23rem rgba(40, 40, 40, 0.25)
+        border-radius: .375rem
+
+.footer
+    background-color: #F7BEB2
+    padding: .45rem .20rem
+    &-title
+        margin: 0
+        margin-bottom: .33rem
+        font-size: .18rem
+        line-height: .22rem
+        text-align: center
+        color: #122947
+        font-weight: 400
+    &-link
+        display: block
+        text-align: center
+        color: #122947
+        text-decoration: none
+
+.template
+    padding: .65rem .35rem .31rem
+    background-color: #FAF8F7
+    z-index: 9999
+    overflow: auto
+    max-height: 100vh
+    &-close
+        position: absolute
+        top: .28rem
+        right: .34rem
+        width: .21rem
+        height: .21rem
+        background: url('../img/close.svg') no-repeat
+        background-size: cover
+    &-first
+        position: fixed
+        top: 0
+        width: 4.8rem
+        margin: auto
+        display: none
+        animation: popup
+        animation-fill-mode: backwards
+        animation-duration: .4s
+    &-second
+        position: fixed
+        top: 0
+        width: 4.8rem
+        margin: auto
+        display: none
+    &-third
+        position: fixed
+        top: 0
+        width: 4.8rem
+        margin: auto
+        display: none
+    &-fourth
+        position: fixed
+        top: 0
+        width: 4.8rem
+        margin: auto
+        display: none
+    &-title
+        margin: 0
+        font-size: .3rem
+        line-height: .37rem
+        text-transform: uppercase
+        text-align: center
+        font-weight: 700
+    &-paragraph
+        font-size: .23rem
+        line-height: .28rem
+        margin-bottom: .6rem
+    &-question
+        font-size: .23rem
+        line-height: .28rem
+        font-weight: 500
+    &-buttons
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        &__input
+            display: none
+            &:checked + .template-label 
+                background: #18B64E
+    &-label
+        width: 1.8rem
+        height: .76rem
+        background: #F1F1F1
+        margin-bottom: .2rem
+        display: flex
+        justify-content: center
+        align-items: center
+        cursor: pointer
+        & p 
+            font-size: .23rem
+            line-height: .28rem
+            font-weight: 500
+    &-button
+        &__link
+            padding: .25rem
+            display: flex
+            justify-content: center
+            align-items: center
+            color: #FFFFFF
+            background: #8A8F95
+            border-radius: .455rem
+            font-size: .21rem
+            line-height: .26rem
+            text-decoration: none
+            text-transform: uppercase
+            margin-top: .2rem
+            &-active
+                background: #122947
+    &-images
+        &__item
+            margin-bottom: .3rem
+            & img
+                display: block 
+                margin: auto 
+                width: 1.5rem
+                height: 2rem
+                border-radius: .15rem
+    &-char
+        display: flex
+        justify-content: space-around
+        &__paragraph
+            font-weight: 500
+            font-size: .23rem
+            line-height: .28rem
+            width: 1.43rem
+            text-align: center
+            margin-top: .18rem
+            margin-bottom: .3rem
+            cursor: pointer
+    &-fourth .template-paragraph
+        margin-bottom: .4rem
+    &-size
+        display: flex
+        justify-content: center
+        &__paragraph
+            display: block
+            width: 1.12rem
+            height: 1.12rem
+            border-radius: 50%
+            background: #18B64E
+            font-weight: 700
+            font-size: .36rem
+            color: #fff
+            display: flex
+            justify-content: center
+            align-items: center
+            margin: 0
+    &-progress
+        position: relative
+        margin-top: .05rem
+        &__title
+            display: flex
+            justify-content: space-between
+            & p
+                margin: 0
+                font-weight: 700
+                font-size: .24rem
+        &__full
+            position: relative
+            width: 100%
+            height: .18rem
+            border-radius: .09rem
+            background-color: #F1F1F1
+            &-progress
+                transition: 1.5s
+                position: absolute
+                top: 0
+                left: 0
+                width: 0
+                height: .16rem
+                border-radius: .09rem
+                background: #18B64E
+        &-first
+            margin-bottom: .3rem 
+    &-progress-second
+        & .template-progress__full
+            &-progress
+                transition: 1.5s
+                width: 0
+                height: .16rem
+                background: #BFC0BF
+        & .template-progress__title
+            & p
+                color: #BFC0BF
+    &-fourth .template-button__link b
+        margin-left: .07rem
+
+.basket
+    position: fixed
+    z-index: 999
+    overflow: auto
+    top: 0rem
+    width: 4.8rem
+    margin: auto
+    background: #F8F8F8
+    height: 100%
+    display: none
+    animation: popup
+    animation-fill-mode: backwards
+    animation-duration: .4s
+    &-close
+        position: absolute
+        top: .28rem
+        right: .24rem
+        width: .21rem
+        height: .21rem
+        background: url('../img/close.svg') no-repeat
+        background-size: cover
+    &-title
+        margin: 0
+        padding-top: .54rem
+        padding-left: .36rem
+        font-size: .30rem
+        line-height: .37rem
+        text-transform: uppercase
+        margin-bottom: .25rem
+    &-product
+        display: flex
+        margin-bottom: .15rem
+        &__text
+            margin-left: .25rem
+            &-title
+                margin: 0
+                font-weight: 400
+                font-size: .23rem
+                line-height: .28rem
+            &-prices
+                display: flex
+                margin-top: .15rem
+                &__old
+                    margin: 0
+                    font-size: .24rem
+                    line-height: .29rem
+                    text-decoration-line: line-through
+                &__new
+                    font-size: .24rem
+                    line-height: .29rem
+                    color: #EF525B
+                    font-weight: 700
+                    margin-left: .1rem
+        &__img
+            position: relative
+            &-discount
+                position: absolute
+                bottom: .03rem
+                right: -.06rem
+                margin: 0
+                background-color: #EF525B
+                color: #fff
+                width: .63rem
+                height: .19rem
+                display: flex
+                justify-content: center
+                align-items: center
+                border-radius: .05rem
+                padding-bottom: 0.03rem
+                font-size: .14rem
+    &-attention
+        background-color: #DDECFF
+        padding: .23rem .27rem .23rem .27rem
+        margin-bottom: .35rem
+        &__paragraph
+            position: relative
+            margin: 0
+            font-size: .18rem
+            line-height: .22rem
+            padding-left: .61rem
+            &:before
+                content: ''
+                position: absolute
+                z-index: 9
+                top: .18rem
+                left: .09rem
+                width: .34rem
+                height: .34rem
+                background: url('../img/info.svg') no-repeat
+                background-size: cover
+    &-form
+        padding: 0 .36rem .39rem .36rem
+        &__label
+            position: relative
+            display: flex
+            justify-content: space-between
+            width: 100%
+            font-size: .23rem
+            line-height: .28rem
+            border-bottom: .02rem solid #DEDEDE
+            padding-bottom: .13rem
+            margin-bottom: .2rem
+            & select
+                position: relative
+                border: none
+                background: inherit
+                font-size: .23rem
+                line-height: .28rem
+                color: #000
+                font-weight: 400
+                appearance: none
+                padding-right: .21rem
+            &:after
+                content: ''
+                display: inline-block
+                position: absolute
+                z-index: 9
+                top: .12rem
+                right: .07rem
+                width: .1rem
+                height: .156rem
+                background: url('../img/select.svg') no-repeat
+                background-size: contain
+        &__result
+            display: flex
+            justify-content: space-between
+            margin-top: .3rem
+            &-first
+                font-size: .23rem
+                line-height: .28rem
+                margin: 0
+            &-second
+                font-size: .24rem
+                line-height: .29rem
+                font-weight: 700
+                margin: 0
+    &-button
+        padding: .4rem .36rem
+        background-color: #fff
+        &__link
+            padding: .25rem
+            display: flex
+            justify-content: center
+            align-items: center
+            color: #FFFFFF
+            background: #122947
+            border-radius: .455rem
+            font-size: .21rem
+            line-height: .26rem
+            text-decoration: none
+            text-transform: uppercase
+    &-about
+        padding: .43rem .41rem 
+        &__text
+            padding: .39rem .31rem .32rem
+            background-color: #fff
+            box-shadow: 0rem .08rem .21rem rgba(157, 157, 157, 0.25)
+            border-radius: .05rem
+            margin-bottom: .29rem
+            &:last-child
+                margin-bottom: 0
+            &-title
+                position: relative
+                margin: 0
+                margin-bottom: .06rem
+                padding-left: .45rem
+                font-size: .18rem
+                line-height: .22rem
+                &:before
+                    position: absolute
+                    top: .03rem
+                    left: -.08rem
+                    content: ''
+                    width: .35rem
+                    height: .35rem
+                    background: url('../img/truck.svg') no-repeat
+                    background-size: cover
+            &:last-child .basket-about__text-title:before
+                top: .07rem
+                background: url('../img/pay.svg') no-repeat
+                background-size: cover
+            &-paragraph
+                margin: 0
+                padding-left: .45rem
+                font-size: .18rem
+                line-height: .22rem
+
+.form
+    padding-bottom: .24rem
+    display: none
+    position: fixed
+    z-index: 999
+    overflow: auto
+    top: 0rem
+    width: 4.8rem
+    margin: auto
+    background-color: #fff
+    height: 100%
+    &-title
+        margin: 0
+        margin-bottom: .35rem
+        font-size: .3rem
+        line-height: .37rem
+        text-transform: uppercase
+        padding: 0 .24rem
+        padding-top: .58rem
+    &-label
+        display: flex
+        flex-direction: column
+        margin-bottom: .3rem
+        font-size: .21rem
+        line-height: .29rem
+        padding: 0 .24rem
+        & input
+            background: #FFFFFF
+            border: .0114208rem solid #DBDBDB
+            box-sizing: border-box
+            border-radius: .125628rem
+            padding: .27rem .17rem
+            margin-top: .09rem
+            font-size: .21rem
+            line-height: .29rem
+            &::-webkit-input-placeholder {color:#C4C4C4; opacity:1;}
+            &::-moz-placeholder          {color:#C4C4C4; opacity:1;}
+            &:-moz-placeholder           {color:#C4C4C4; opacity:1;}
+            &:-ms-input-placeholder      {color:#C4C4C4; opacity:1;}
+    &-product
+        padding: .23rem .24rem
+        background: #F8F8F8 
+    &-price
+        display: flex
+        justify-content: space-between
+        border-top: .02rem solid #DEDEDE
+        &__paragraph
+            margin-bottom: 0
+            font-size: .18rem
+            line-height: .22rem
+    &-button
+        display: block
+        margin: auto
+        margin-top: .25rem
+        margin-bottom: .22rem
+        border: none
+        width: 3.73rem
+        height: .75rem
+        font-size: .21rem
+        line-height: .26rem
+        letter-spacing: 0.01em
+        text-transform: uppercase
+        background: #122947
+        border-radius: .455rem
+        color: #fff
+        cursor: pointer
+        text-align: center
+    &-images
+        display: flex
+        justify-content: space-between
+        width: 2.96rem
+        align-items: center
+        margin: auto
+        &__item
+            width: 1.09rem
+            height: .43rem
+            &:nth-child(2)
+                width: .97rem
+                height: .32rem
+            &:nth-child(3)
+                width: .42rem
+                height: .29rem
+    &-text
+        & p
+            color: #818181
+            font-size: .18rem
+            line-height: .22rem
+
+@keyframes popup
+    from 
+        transform: translateX(100%)
+    to 
+        transform: translateY(0)
+
+.overlay
+    display: none
+    position: fixed
+    z-index: 999
+    top: 0
+    width: 4.8rem
+    height: 1000px
+    margin: auto
+    background: hsla(0,0%,100%,.55)
+    backdrop-filter: blur(4px)
+    overflow: hidden
+
+@media (max-width:321px) {
+    .template-title {
+        font-size: .26rem
+    }
+    .template-fourth .template-paragraph {
+        margin-bottom: .2rem
+    }
+}
+
+.fixed 
+    position:fixed
+    width:100%
+
+    

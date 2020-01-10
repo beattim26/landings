@@ -1,0 +1,477 @@
+html
+    box-sizing: border-box
+    -ms-overflow-style: scrollbar
+    font-family: 'Montserrat', sans-serif
+    font-size: 21vw
+    overflow-x: hidden
+
+@media (min-width: 481px) {
+  html {
+    font-size: 100px;
+    overflow-x: hidden;
+  }
+}
+
+body
+    margin: 0
+    color: #000
+    font-size: 16px
+
+img
+    width: 100%
+    height: auto
+
+*,::after,::before
+    box-sizing: inherit
+
+// header and header-menu
+
+.header
+    position: relative
+    &-title
+        background: #E1F8EF
+        padding: .1rem .47rem
+        &__text
+            font-style: normal
+            font-weight: normal
+            font-size: .19rem
+            line-height: .24rem
+            text-align: center
+            margin: auto
+            max-width: 3.86rem
+        &__link
+            display: block
+            font-weight: 800
+            color: #000
+            text-decoration: none
+        &__img
+            width: .51rem
+            height: .51rem
+            margin-right: .1rem
+    &-nav
+        display: flex 
+        justify-content: space-between
+        max-height: .85rem
+        padding: .11rem .29rem
+        &__img
+            width: .51rem
+            height: .51rem
+    &-basket
+        display: flex
+        align-items: center
+        text-decoration: none
+        &__span
+            font-size: .16rem
+            line-height: .20rem
+            color: #939393
+        &__img
+            width: .2054rem
+            height: .2054rem
+            margin-right: .05rem
+    &-button
+        background-color: inherit
+        border: none
+        &__img
+            width: .35rem
+            height: .21rem
+    &-menu
+        position: absolute
+        z-index: 2
+        display: flex
+        flex-direction: column
+        bottom: -1.1rem
+        left: 0
+        width: 100vw
+        list-style: none
+        padding: 0
+        font-style: normal
+        font-weight: normal
+        font-size: .2rem
+        line-height: .24rem
+        text-align: center
+        margin: auto
+        background: #E1F8EF
+        padding: .11rem .29rem
+        transition: .4s ease;
+        &__link
+            text-decoration: none
+            color: #000
+            margin-bottom: .05rem
+
+// jumbotron
+
+.swiper-container
+    z-index: 0
+
+.jumbotron
+    padding: .2rem 0
+    &-title
+        font-family: 'Notable', sans-serif
+        font-size: .25rem
+        line-height: .32rem
+        color: #3BB59F
+        margin: 0
+        font-weight: normal
+        &__span
+            display: block
+            font-family: 'Montserrat', sans-serif
+            color: #000
+            text-transform: uppercase
+    &-list
+        margin: 0 0 .4rem 0
+        padding: 0 0 0 .2rem
+        list-style: none
+        &__item
+            position: relative
+            font-style: normal
+            font-weight: normal
+            font-size: .2rem
+            line-height: .24rem
+            margin-bottom: .1rem
+            &:before
+                content: ''
+                position: absolute
+                top: .04rem
+                left: -.2rem
+                width: .15rem
+                height: .15rem
+                background: url(../img/check.svg) no-repeat
+                background-size: cover
+    &-value
+        display: flex
+        font-size: .2632rem
+        line-height: .32rem
+        text-align: center
+        max-width: 3rem
+        margin: auto
+        margin-bottom: .3rem
+        &__minus
+            display: flex
+            justify-content: center
+            align-items: center
+            min-width: .53rem
+            min-height: .53rem
+            background: #C4C4C4
+            border-radius: 6.58px 0px 0px 6.58px
+            cursor: pointer
+        &__count
+            min-width: 1.94rem
+            min-height: .53rem
+            display: flex
+            justify-content: center
+            align-items: center
+            border-bottom: 1.316px solid #C4C4C4
+            border-top: 1.316px solid #C4C4C4
+        &__plus
+            display: flex
+            justify-content: center
+            align-items: center
+            min-width: .53rem
+            min-height: .53rem
+            background: #C4C4C4
+            border-radius: 0px 6.58px 6.58px 0px
+            cursor: pointer
+    &-button
+        display: block
+        background: linear-gradient(180deg, #ED7B3A 0%, #C70000 48.78%)
+        border-radius: 6.58px
+        max-width: 3rem
+        margin: auto
+        font-weight: 800
+        font-size: .2632rem
+        line-height: .32rem
+        text-align: center
+        color: #FFFFFF
+        text-transform: uppercase
+        text-decoration: none
+        padding: .1rem 0
+        border-bottom: .05rem solid #8F0000
+
+.prices
+    display: flex
+    align-items: center
+    &-new
+        font-weight: bold
+        font-size: .4rem
+        line-height: .49rem
+        margin: .2rem 0 
+        margin-right: .3rem
+    &-old
+        font-weight: 500
+        font-size: .3rem
+        line-height: .37rem
+        text-decoration-line: line-through
+        color: #9F9F9F
+        margin: .2rem 0 
+
+// about sectoion
+
+.about
+    margin-bottom: .45rem
+    &-title
+        font-weight: bold
+        font-size: .25rem
+        line-height: .3rem
+        text-align: center
+    &-text
+        &__paragraph
+            font-size: .22rem
+            line-height: .3rem
+            letter-spacing: 0.01em
+
+// expert title
+
+.expert
+    padding-bottom: 40px
+    &-title
+        font-weight: bold
+        font-size: .25rem
+        line-height: .3rem
+        text-align: center
+        text-transform: uppercase
+    &-text
+        &__paragraph
+            font-size: .22rem
+            line-height: .3rem
+            letter-spacing: 0.01em
+        &__title
+            font-weight: 600
+            font-size: .22rem
+            line-height: .3rem
+            letter-spacing: 0.01em
+
+// description section
+
+.description
+    padding: .4rem 0 0 0
+    background: linear-gradient(180deg, #79CDD0 0%, #8FD6D9 64.06%)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: bottom center
+    &-title
+        font-weight: bold
+        font-size: .25rem
+        line-height: .3rem
+        text-align: center
+        text-transform: uppercase
+        margin: 0
+    &-text
+        &__paragraph
+            font-size: .22rem
+            line-height: .3rem
+            letter-spacing: 0.01em
+    &-button
+        display: block
+        background: linear-gradient(180deg, #ED7B3A 0%, #C70000 48.78%)
+        border-radius: 6.58px
+        max-width: 3rem
+        margin: auto
+        font-weight: 800
+        font-size: .2632rem
+        line-height: .32rem
+        text-align: center
+        color: #FFFFFF
+        text-transform: uppercase
+        text-decoration: none
+        padding: .1rem 0
+        border-bottom: .05rem solid #8F0000
+    &-image
+        display: block
+
+//advantages section
+
+.advantages
+    margin-bottom: .4rem
+    &-title
+        font-weight: bold
+        font-size: .25rem
+        line-height: .3rem
+        text-align: center
+        text-transform: uppercase
+    &-list
+        list-style: none
+        font-size: .22rem
+        line-height: .27rem
+        padding-left: .2rem
+        &__item
+            position: relative
+            font-style: normal
+            font-weight: normal
+            font-size: .2rem
+            line-height: .24rem
+            margin-bottom: .1rem
+            &:before
+                content: ''
+                position: absolute
+                top: .07rem
+                left: -.25rem
+                width: .15rem
+                height: .12rem
+                background: url(../img/check-2.svg) no-repeat
+                background-size: cover
+
+// reviews section
+
+.reviews
+    margin-bottom: .4rem
+    &-title
+        font-weight: bold
+        font-size: .25rem
+        line-height: .3rem
+        text-align: center
+        text-transform: uppercase
+
+.slider
+    position: relative
+    &-container
+        margin-bottom: -.5rem
+        overflow: hidden
+    &-item
+        background: #F7F7F7
+        height: auto
+        &__img
+            display: block
+            margin-bottom: .2rem
+        &__author
+            font-weight: 600
+            font-size: .256871rem
+            line-height: .31rem
+            margin: 0
+            margin-bottom: .1rem
+            padding: 0 .1rem
+        &__title
+            font-weight: 600
+            font-size: .256871rem
+            line-height: .31rem
+            margin: 0
+            padding: 0 .1rem
+        &__paragraph
+            font-size: .22rem
+            line-height: .3rem
+            letter-spacing: 0.01em
+            padding: 0 .1rem
+
+.swiper-pagination-bullet 
+    height: 0.14rem
+    width: 0.14rem
+    margin-right: .1rem
+    width: .79rem
+    height: .14rem
+    background: #b9edd9
+    border-radius: 10px
+    &-active
+        background-color: #79CDD0
+    &:last-child
+        margin-right: 0
+
+.swiper-pagination
+    position: relative
+    bottom: -.8rem
+
+// form section
+
+.form
+    margin-bottom: .4rem
+    padding-top: .4rem
+    &-content
+        max-width: 5.06rem
+        margin: auto
+    &-title
+        font-weight: bold
+        font-size: .28rem
+        line-height: .3rem
+        text-align: center
+        text-transform: uppercase
+    &-label
+        display: flex
+        flex-direction: column
+        font-size: .22rem
+        line-height: .3rem
+        letter-spacing: 0.01em
+        margin-bottom: .15rem
+        width: 100%
+        &__input
+            border: .01rem solid #ced4da;
+            border-radius: .02rem
+            padding: .1rem .05rem
+            margin-top: .05rem
+            -webkit-appearance: none
+            -moz-appearance: none
+            appearance: none
+        &__select
+            position: relative
+            &:after
+                content: ''
+                position: absolute
+                top: .5rem
+                right: .1rem
+                width: .1rem
+                height: .1rem
+                background: url('../img/arrow-down.svg') no-repeat
+                background-size: cover
+        &__small
+            display: flex
+            justify-content: center
+            background-color: #ffc205
+            margin-top: .15rem
+            border-radius: .05rem
+            font-weight: bold
+        &__image
+            width: .3rem
+            height: .3rem
+            margin-right: .1rem
+    &-selected
+        display: flex
+        &__image
+            width: .8rem
+            height: .8rem
+            margin-right: .2rem
+    &-description
+        font-size: .11rem
+        line-height: .15rem
+        letter-spacing: 0.01em
+        text-align: center
+        &__link
+            text-decoration: none
+            color: #007bff
+    &-submit
+        display: flex
+        align-items: center
+        background-color: #ffc205
+        padding: 0
+        border: none
+        width: 2.41rem
+        margin: auto
+        font-weight: bold
+        font-size: .18rem
+        cursor: pointer
+        &__img
+            display: flex
+            justify-content: center
+            align-items: center
+            background-color: #343a40
+            padding: .1rem
+            margin-right: .1rem
+            & img
+                width: .2rem
+                height: .2rem
+
+// footer section
+
+.footer
+    background: #E1F8EF
+    padding: .1rem .47rem
+    &-text
+        font-style: normal
+        font-weight: normal
+        font-size: .14rem
+        text-align: center
+        margin: auto
+        max-width: 3.86rem
+        margin-bottom: .1rem
+    &-link
+        display: block
+        text-align: center
+        font-size: .14rem
+        text-decoration: none
+        color: #007bff

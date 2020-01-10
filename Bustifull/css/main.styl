@@ -1,0 +1,741 @@
+html
+    box-sizing: border-box
+    -ms-overflow-style: scrollbar
+    font-family: 'Rubik', sans-serif
+    font-size: 21vw
+    overflow-x: hidden
+
+@media (min-width: 481px) {
+  html {
+    font-size: 100px;
+    overflow-x: hidden;
+  }
+}
+
+body
+    margin: 0
+    color: #141414
+
+img
+    width: 100%
+    height: auto
+
+*,::after,::before
+    box-sizing: inherit
+
+// header and header-menu
+
+.header
+    position: relative
+    &-nav
+        display: flex 
+        justify-content: space-between
+        max-height: .85rem
+        padding: .11rem .29rem
+        background: #00BBC7
+        &__img
+            width: 1.4398rem
+            height: .4396rem
+    &-basket
+        display: flex
+        align-items: center
+        text-decoration: none
+        &__img
+            width: .30rem
+            height: .33rem
+    &-button
+        background-color: inherit
+        border: none
+        outline: none
+        &__img
+            display: block
+            margin: auto
+            width: .35rem
+            height: .21rem
+    &-menu
+        position: absolute
+        z-index: 2
+        display: flex
+        flex-direction: column
+        bottom: -1.05rem
+        left: 0
+        width: 100vw
+        list-style: none
+        padding: 0
+        font-style: normal
+        font-weight: normal
+        font-size: .2rem
+        line-height: .24rem
+        text-align: center
+        margin: auto
+        background: #00BBC7
+        padding: .11rem .29rem
+        transition: .4s ease
+        &__link
+            text-decoration: none
+            color: #fff
+            margin-bottom: .05rem
+
+// jumbotron
+
+.jumbotron
+    position: relative
+    background-color: #fff
+    &-back
+        min-height: 5.86rem
+        background-image: url('../img/jumbotron-back.png')
+        background-repeat: no-repeat
+        background-size: cover
+    &-prod
+        position: absolute
+        width: 2.21rem
+        height: 2.11rem
+        z-index: 2
+        top: 2.55rem
+        left 50%
+        background-image: url('../img/product2.png')
+        background-repeat: no-repeat
+        background-size: cover
+
+// about sectoion
+
+.about
+    margin-bottom: .45rem
+    &-title1
+        font-style: normal
+        font-weight: 500
+        font-size: .25rem
+        line-height: 99.19%
+        letter-spacing: 0.01em
+        text-transform: uppercase
+        color: #00BBC7
+    &-title2
+        font-weight: 900
+        font-size: .4rem
+        line-height: 99.19%
+        letter-spacing: 0.01em
+        text-transform: uppercase
+        color: #00BBC7
+        margin-top: .15rem
+    &-text
+        font-style: normal
+        font-weight: 500
+        font-size: .2rem
+        line-height: 99.19%
+        letter-spacing: 0.03em
+    &-price
+        display: flex
+        margin: .2rem 0
+        &__main
+            font-style: normal
+            font-weight: 500
+            font-size: .8rem
+            line-height: 99.19%
+            letter-spacing: 0.03em
+            text-transform: uppercase
+            margin: 0 .2rem 0 0
+        &__second
+            font-style: normal
+            font-weight: 500
+            font-size: .4rem
+            line-height: 99.19%
+            letter-spacing: 0.03em
+            text-decoration-line: line-through
+            text-transform: uppercase
+            margin: 0
+    &-button
+        display: block
+        font-style: normal
+        font-weight: bold
+        font-size: .22rem
+        line-height: 99.19%
+        letter-spacing: 0.03em
+        text-transform: uppercase
+        color: #FFFFFF
+        background: #9425EB
+        box-shadow: 0px .04rem .04rem rgba(0, 0, 0, 0.25)
+        border-radius: .05rem
+        text-decoration: none
+        text-align: center
+        padding: .3rem 0
+
+//advantages section
+
+.advantages
+    margin-bottom: .4rem
+    &-first &-image
+        display: block
+        width: 3.52rem
+        height: 2.71rem
+        margin: auto
+    &-title
+        font-weight: 900
+        font-size: .4rem
+        line-height: 99.19%
+        letter-spacing: 0.03em
+        text-transform: uppercase
+        color: #00BBC7
+        margin: .3rem 0
+    &-text
+        font-style: normal
+        font-weight: 500
+        font-size: .2rem
+        line-height: 99.19%
+        letter-spacing: 0.03em
+    &-small
+        font-style: normal
+        font-weight: 300
+        font-size: .2rem
+        line-height: 99.19%
+        letter-spacing: 0.03em
+    &-list
+        font-style: normal
+        font-weight: normal
+        font-size: .2rem
+        line-height: 99.19%
+        letter-spacing: 0.03em
+        list-style: none
+        padding-left: .3rem
+        &__item
+            position: relative
+            margin-bottom: .3rem
+            &:before
+                content: ''
+                position: absolute
+                top: .05rem
+                left: -.25rem
+                width: .15rem
+                height: .15rem
+                background: #00BBC7
+                border-radius: 50%
+    &-description
+        font-style: normal
+        font-weight: 500
+        font-size: .2rem
+        line-height: 99.19%
+        letter-spacing: 0.03em
+        color: #FFFFFF
+        background: #9425EB
+        border-radius: .05rem
+        padding: .27rem .23rem
+        
+// form section
+
+.form
+    background-color: #fff
+    background-image: url('../img/form.png')
+    background-repeat: no-repeat
+    background-size: cover
+    max-height: 5.49rem
+    padding: .6rem 0
+    &-container
+        max-width: 6.1rem !important
+    &-title
+        display: block
+        margin: auto
+        font-style: normal
+        font-weight: bold
+        font-size: .25rem
+        line-height: 99.19%
+        text-align: center
+        letter-spacing: 0.03em
+        text-transform: uppercase
+        margin-top: 0
+        max-width: 3.4rem
+        margin-bottom: .4rem
+    &-label
+        display: flex
+        flex-direction: column
+        font-style: normal
+        font-weight: 500
+        font-size: .2rem
+        line-height: 99.19%
+        letter-spacing: 0.03em
+        margin-bottom: .28rem
+    &-input
+        background: #FFFFFF
+        box-shadow: 0px .04rem .04rem rgba(0, 0, 0, 0.1)
+        border-radius: .05rem
+        padding: .2rem .1rem
+        border: none
+        margin-top: .2rem
+        font-style: normal
+        font-weight: normal
+        font-size: .2rem
+        line-height: 99.19%
+        letter-spacing: 0.03em
+    &-button
+        display: block
+        font-style: normal
+        font-weight: bold
+        font-size: .22rem
+        line-height: 99.19%
+        text-align: center
+        letter-spacing: 0.03em
+        text-transform: uppercase
+        color: #FFFFFF
+        background: #9425EB
+        box-shadow: 0px .04rem .04rem rgba(0, 0, 0, 0.25)
+        border-radius: .05rem
+        width: 100%
+        padding: .3rem
+        border: none
+        margin-top: .45rem
+
+// description section
+
+.description
+    &-title1
+        font-style: normal
+        font-weight: 900
+        font-size: .4rem
+        line-height: 99.19%
+        letter-spacing: 0.03em
+        text-transform: uppercase
+        color: #00BBC7
+    &-image
+        display: block
+        margin: auto
+        width: 3.73rem
+        height: 3rem
+    &-fourth &-image
+        width: 4.4297rem
+        height: 4.147rem
+    &-title2
+        font-style: normal
+        font-weight: 900
+        font-size: .25rem
+        line-height: 99.19%
+        letter-spacing: 0.03em
+        text-transform: uppercase
+        color: #00BBC7
+    &-fourth &-title2
+        font-style: normal
+        font-weight: 900
+        font-size: .4rem
+        line-height: 99.19%
+        letter-spacing: 0.03em
+        text-transform: uppercase
+        color: #00BBC7
+        margin-bottom: .3rem
+    &-text
+        font-style: normal
+        font-weight: normal
+        font-size: .2rem
+        line-height: 99.19%
+        letter-spacing: 0.03em
+        margin-bottom: .4rem
+    &-fourth &-text
+        font-weight: 500
+    &-list
+        list-style: none
+        font-style: normal
+        font-weight: 300
+        font-size: .25rem
+        line-height: 99.19%
+        letter-spacing: 0.03em
+        padding-left: 1rem
+        &__item
+            position: relative
+            margin-bottom: .5rem
+            &:first-child:before
+                position: absolute
+                display: flex
+                justify-content: center
+                align-items: center
+                content: '77%'
+                top: 0
+                left: -1rem
+                width: .83rem
+                height: .83rem
+                border-radius: 50%
+                background-color: #9425EB
+                font-weight: 900
+                font-size: .3rem
+                line-height: 99.19%
+                text-align: center
+                letter-spacing: 0.03em
+                text-transform: uppercase
+                color: #FFFFFF
+            &:nth-child(2):before
+                position: absolute
+                display: flex
+                justify-content: center
+                align-items: center
+                content: '87%'
+                top: 0
+                left: -1rem
+                width: .83rem
+                height: .83rem
+                border-radius: 50%
+                background-color: #9425EB
+                font-weight: 900
+                font-size: .3rem
+                line-height: 99.19%
+                text-align: center
+                letter-spacing: 0.03em
+                text-transform: uppercase
+                color: #FFFFFF
+            &:nth-child(3):before
+                position: absolute
+                display: flex
+                justify-content: center
+                align-items: center
+                content: '96%'
+                top: 0
+                left: -1rem
+                width: .83rem
+                height: .83rem
+                border-radius: 50%
+                background-color: #9425EB
+                font-weight: 900
+                font-size: .3rem
+                line-height: 99.19%
+                text-align: center
+                letter-spacing: 0.03em
+                text-transform: uppercase
+                color: #FFFFFF
+
+// question block
+
+.question
+    background-color: #fff
+    background-image: url('../img/question.png')
+    background-repeat: no-repeat
+    background-size: cover
+    padding: .67rem 0
+    margin-bottom: .6rem
+    &-title
+        font-style: normal
+        font-weight: bold
+        font-size: .25rem
+        line-height: 99.19%
+        text-align: center
+        letter-spacing: 0.03em
+        text-transform: uppercase
+        margin-top: 0
+        margin-bottom: .37rem
+    &-block
+        background: #FFFFFF
+        box-shadow: 0px .04rem .04rem rgba(0, 0, 0, 0.1)
+        border-radius: .1rem
+        padding: .34rem .32rem
+        margin-bottom: .3rem
+        &__title
+            font-style: normal
+            font-weight: normal
+            font-size: .25rem
+            line-height: 99.19%
+            display: flex
+            align-items: center
+            text-align: center
+            letter-spacing: 0.03em
+            margin-top: 0
+            margin-bottom: .3rem
+    &-answers
+        display: flex
+        justify-content: space-between
+        &__span
+            cursor: pointer
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 1.7rem
+            height: .7rem
+            font-style: normal
+            font-weight: 500
+            font-size: .25rem
+            line-height: 99.19%
+            text-align: center
+            letter-spacing: 0.03em
+            text-transform: uppercase
+            color: #00BBC7
+            border: .02rem solid #00BBC7
+            box-sizing: border-box
+            border-radius: .10rem
+            transition: .1s
+    &-active
+        background: #00BBC7
+        color: #fff
+    &-button
+        cursor: pointer
+        display: block
+        font-style: normal
+        font-weight: bold
+        font-size: .22rem
+        line-height: 99.19%
+        text-align: center
+        letter-spacing: 0.03em
+        text-transform: uppercase
+        color: #FFFFFF
+        background: #9425EB
+        box-shadow: 0px .04rem .04rem rgba(0, 0, 0, 0.25)
+        border-radius: .05rem
+        width: 100%
+        padding: .3rem
+        text-decoration: none
+    &-answer
+        border: .02rem solid #00BBC7
+        box-sizing: border-box
+        border-radius: .05rem
+        padding: .25rem .4rem
+        margin-bottom: .4rem
+        &__text
+            margin: 0
+            font-style: normal
+            font-weight: bold
+            font-size: .22rem
+            line-height: 99.19%
+            text-align: center
+            letter-spacing: 0.03em
+            text-transform: uppercase
+            color: #00BBC7
+
+// reviews section
+
+.reviews
+    margin-bottom: .4rem
+    position: relative
+    &-container
+        position: relative
+    &-title
+        font-style: normal
+        font-weight: 900
+        font-size: .4rem
+        line-height: 99.19%
+        letter-spacing: 0.03em
+        text-transform: uppercase
+        color: #00BBC7
+
+.slider
+    position: relative
+    &-container
+        margin-bottom: -.5rem
+        overflow: hidden
+        background: #FFFFFF
+        box-shadow: 0px 0px .1rem rgba(0, 0, 0, 0.15)
+        border-radius: .1rem
+        margin: 0 .4rem
+    &-item
+        &__img
+            display: block
+            margin-bottom: .2rem
+        &__ava
+            position: relative
+            bottom: .71rem
+            display: block
+            border-radius: 50%
+            width: 1rem
+            height: 1rem
+            margin: auto
+            margin-bottom: -.61rem
+        &__author
+            font-style: normal;
+            font-weight: 500
+            font-size: .3rem
+            line-height: 99.19%
+            letter-spacing: 0.03em
+            text-transform: uppercase
+            margin: .1rem 0
+            text-align: center
+        &__title
+            font-style: normal;
+            font-weight: 500
+            font-size: .3rem
+            line-height: 99.19%
+            letter-spacing: 0.03em
+            text-transform: uppercase
+            margin: .1rem 0
+            text-align: center
+        &__paragraph
+            font-style: normal
+            font-weight: normal
+            font-size: .2rem
+            line-height: 99.19%
+            display: flex
+            align-items: center
+            text-align: center
+            letter-spacing: 0.03em
+            padding: 0 .25rem
+    &-review
+        display: flex
+        justify-content: space-between
+        padding: 0 .25rem
+        &__date
+            font-style: normal
+            font-weight: normal
+            font-size: .25rem
+            line-height: 99.19%
+            display: flex
+            align-items: center
+            letter-spacing: 0.03em
+            color: #AAAAAA
+        &__raiting
+            font-style: normal
+            font-weight: bold
+            font-size: .3rem
+            line-height: 99.19%
+            display: flex
+            align-items: center
+            letter-spacing: 0.03em
+            text-transform: uppercase
+            color: #9425EB
+    &-next
+        outline: none
+        position: absolute
+        width: .18rem
+        height: .35rem
+        top: 4rem
+        right: .2rem
+    &-prev
+        outline: none
+        position: absolute
+        width: .18rem
+        height: .35rem
+        top: 4rem
+        left: .2rem
+
+.swiper-pagination-bullet 
+    height: 0.14rem
+    width: 0.14rem
+    margin-right: .1rem
+    width: .18rem
+    height: .19rem
+    background: #C4C4C4
+    border-radius: .1rem
+    &-active
+        background-color: #00BBC7
+    &:last-child
+        margin-right: 0
+
+.swiper-pagination
+    margin-top: -.4rem
+    position: relative
+    bottom -.15rem
+
+// order section
+
+.order
+    margin-bottom: .4rem
+    &-image
+        display: block
+        margin: auto
+        width: 4.41rem
+        height: 4.4rem
+    &-title
+        font-style: normal
+        font-weight: 900
+        font-size: .37rem
+        line-height: 99.19%
+        letter-spacing: 0.03em
+        text-transform: uppercase
+        color: #00BBC7
+        margin-bottom: .15rem
+    &-text
+        font-style: normal
+        font-weight: 500
+        font-size: .2rem
+        line-height: 99.19%
+        letter-spacing: 0.03em
+    &-list
+        font-style: normal
+        font-weight: 300
+        font-size: .3rem
+        line-height: 99.19%
+        letter-spacing: 0.03em
+        list-style: none
+        padding-left: .85rem
+        margin-top: .5rem
+        &__item
+            position: relative
+            margin-bottom: .4rem
+            &:before
+                position: absolute
+                display: flex
+                justify-content: center
+                align-items: center
+                content: ''
+                top: -.04rem
+                left: -.8rem
+                width: .65rem
+                height: .65rem
+                border-radius: 50%
+                background-color: #9425EB
+                font-weight: 900
+                font-size: .3rem
+                line-height: 99.19%
+                text-align: center
+                letter-spacing: 0.03em
+                text-transform: uppercase
+                color: #FFFFFF
+            &:first-child:before
+                top: -.17rem
+                background-image: url('../img/order-1.svg')
+                background-repeat: no-repeat
+                background-position: center
+                background-size: .28rem .28rem
+            &:nth-child(2):before
+                background-image: url('../img/order-2.svg')
+                background-repeat: no-repeat
+                background-position: center
+                background-size: .23rem .4rem
+            &:nth-child(3):before
+                background-image: url('../img/order-3.svg')
+                background-repeat: no-repeat
+                background-position: center
+                background-size: .42rem .33rem
+            &:nth-child(4):before
+                background-image: url('../img/order-4.svg')
+                background-repeat: no-repeat
+                background-position: center
+                background-size: .36rem .22rem
+
+// proposal section
+
+.proposal
+    padding: .6rem 0
+    background-image: url('../img/question.png')
+    background-repeat: no-repeat
+    background-size: cover
+    &-image
+        display: block
+        margin: auto
+        width: 3.62rem
+        height: 3.73rem
+        margin-bottom: .4rem
+
+// footer section
+
+.footer
+    background: #141414
+    padding: .4rem .47rem
+    &-text
+        font-style: normal
+        font-weight: normal
+        font-size: .14rem
+        text-align: center
+        margin: auto
+        max-width: 3.86rem
+        margin-bottom: .1rem
+        color: #fff
+    &-link
+        display: block
+        text-align: center
+        font-size: .14rem
+        text-decoration: none
+        color: #00BBC7
+    &-list
+        font-style: normal
+        font-weight: normal
+        font-size: .25rem
+        line-height: 99.19%
+        text-align: center
+        letter-spacing: 0.03em
+        color: #FFFFFF
+        list-style: none
+        padding: 0
+        &__item
+            margin-bottom: .05rem
+        &__link
+            color: #fff
+            text-decoration: none

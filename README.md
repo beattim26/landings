@@ -1,19 +1,19 @@
 # LeadRock
 
-<img src="./examples/leadrock.jpg">
+![](./examples/leadrock.jpg)
 
 # Bustifull
 
-<img src="./examples/bustifull.jpg">
+![](./examples/bustifull.jpg)
 
 # GoodbyeCylos
 
-<img src="./examples/goodbyecylos.jpg">
+![](./examples/goodbyecylos.jpg)
 
 # Fatburner
 
-<img src="./examples/fatburner.jpg">
+![](./examples/fatburner.jpg)
 
 # Hair Extension
 
-<img src="./examples/hair-extension.jpg">
+![](./examples/hair-extension.jpg)

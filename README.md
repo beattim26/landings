@@ -13,3 +13,7 @@
 # Fatburner
 
 <img src="./examples/fatburner.jpg">
+
+# Hair Extension
+
+<img src="./examples/hair-extension.jpg">

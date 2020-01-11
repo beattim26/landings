@@ -52,4 +52,4 @@
 
 # Knee Magnet
 
-![](./examples/knee-magenet.jpg)
+![](./examples/knee-magnet.jpg)
